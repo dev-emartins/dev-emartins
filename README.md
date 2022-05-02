@@ -1,4 +1,4 @@
-- 👋 Hi, I’m #@Everaldo-Martins#
+- 👋 Hi, I’m @Everaldo-Martins
 - 👀 I’m interested in programming and technological solutions.
 - 🌱 I’m currently learning web languages and non-relational databases.
 - 💞️ I’m looking to collaborate on with areas of development that provide improvements in people's lives.
