@@ -7,7 +7,7 @@
 - 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB**_.
 - 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways to develop new jobs_.
 
-## Portugês
+## Português
 
 ### Sobre mim
 
