@@ -7,10 +7,6 @@
 - 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB**_.
 - 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways to develop new jobs_.
 
-### Contact
-- 📫 **<a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">E-mail</a>** 
-- 📊 **<a href="https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3" target="_blank">Linkedin</a>**
-
 ## Portugês
 
 ### Sobre mim
@@ -20,7 +16,7 @@
 - 👨🏽‍💻 _Estudo **Ciência da Computação** - **UEPB**_.
 - 🤵🏽‍♂️ _Sou apaixonado pela aréa de programação e técnologia, é uma diversão aprender novas técnicas e formas e desenvolver novos trabalhos_.
 
-### Contato
+### Contact/Contato
 - 📫 **<a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">E-mail</a>** 
 - 📊 **<a href="https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3" target="_blank">Linkedin</a>**
 
