@@ -1,8 +1,28 @@
-- 👋 Hi, I’m @Everaldo-Martins
-- 👀 I’m interested in programming and technological solutions.
-- 🌱 I’m currently learning web languages and non-relational databases.
-- 💞️ I’m looking to collaborate on with areas of development that provide improvements in people's lives.
-- 📫 How to reach me via email and from Github.
+## English
+
+### About me
+
+- 👋🏽 _Hello, I'm **Everaldo Martins**_.
+- 🖥️ _I'm a **Computer Technician** - **IFPB**_.
+- 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB**_.
+- 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways to develop new jobs_.
+
+### Contact
+- 📫 **<a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">E-mail</a>** 
+- 📊 **<a href="https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3" target="_blank">Linkedin</a>**
+
+## Portugês
+
+### Sobre mim
+
+- 👋🏽 _Olá, sou **Everaldo Martins**_.
+- 🖥️ _Sou **Técnico em Informática** - **IFPB**_.
+- 👨🏽‍💻 _Estudo **Ciência da Computação** - **UEPB**_.
+- 🤵🏽‍♂️ _Sou apaixonado pela aréa de programação e técnologia, é uma diversão aprender novas técnicas e formas e desenvolver novos trabalhos_.
+
+### Contato
+- 📫 **<a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">E-mail</a>** 
+- 📊 **<a href="https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3" target="_blank">Linkedin</a>**
 
 <!---
 Everaldo-Martins/Everaldo-Martins is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
