@@ -5,7 +5,7 @@
 - 👋🏽 _Hello, I'm **Everaldo Martins**_.
 - 🖥️ _I'm a **Computer Technician** - **IFPB**_.
 - 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB**_.
-- 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways to develop new jobs_.
+- 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways and develop new work_.
 
 ## Português
 
@@ -14,7 +14,7 @@
 - 👋🏽 _Olá, sou **Everaldo Martins**_.
 - 🖥️ _Sou **Técnico em Informática** - **IFPB**_.
 - 👨🏽‍💻 _Estudo **Ciência da Computação** - **UEPB**_.
-- 🤵🏽‍♂️ _Sou apaixonado pela aréa de programação e técnologia, é uma diversão aprender novas técnicas e formas e desenvolver novos trabalhos_.
+- 🤵🏽‍♂️ _Sou apaixonado pela área de programação e tecnologia, é uma diversão aprender novas técnicas e formas e desenvolver novos trabalhos_.
 
 ### Contact/Contato
 - 📫 **<a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">E-mail</a>** 
