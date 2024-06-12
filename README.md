@@ -4,14 +4,18 @@
 ##
 
 > 👋🏽 _Hello, I'm **Everaldo Martins**_.
+
 > 🖥️ _I'm a **Computer Technician** - **IFPB**_.
+
 > 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB**_.
+
 > 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways and develop new work_.
 
 ### Contact
 ##
 
-> 📫 **[E-mail](mailto:everaldoinfortecnico@gmail.com)** 
+> 📫 **[E-mail](mailto:everaldoinfortecnico@gmail.com)**
+
 > 📊 **[Linkedin](https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3)**
 
 ### Job Statistics
