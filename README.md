@@ -1,7 +1,6 @@
 # My Home Page
 
 ### About me
-
 ##
 
 - 👋🏽 _Hello, I'm **Everaldo Martins**_.
@@ -10,13 +9,12 @@
 - 🤵🏽‍♂️ _I'm passionate about programming and technology, it's fun to learn new techniques and ways and develop new work_.
 
 ### Contact
-
 ##
+
 - 📫 **[E-mail](mailto:everaldoinfortecnico@gmail.com)** 
 - 📊 **[Linkedin](https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3)**
 
 ### Job Statistics
-
 ##
 
 ![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=Everaldo-Martins&show_icons=true&theme=transparent&hide_border=true)
