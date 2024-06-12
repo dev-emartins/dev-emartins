@@ -1,6 +1,4 @@
-## English
-
-##
+# My Home Page
 
 ### About me
 
@@ -17,9 +15,11 @@
 - 📫 **[E-mail](mailto:everaldoinfortecnico@gmail.com)** 
 - 📊 **[Linkedin](https://www.linkedin.com/in/everaldo-martins-de-oliveira-214400b3)**
 
+### Job Statistics
+
 ##
 
-![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=Everaldo-Martins&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true)
+![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=Everaldo-Martins&show_icons=true&theme=transparent&hide_border=true)
 
 ##
 
