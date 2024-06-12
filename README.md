@@ -19,11 +19,11 @@
 
 ##
 
-[![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=Everaldo-Martins&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true)]
+![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=Everaldo-Martins&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true)
 
 ##
 
-[![Everaldo-Martins](https://github-readme-stats.vercel.app/api/top-langs/?username=Everaldo-Martins&layout=donut&theme=transparent&hide_border=true)]
+![Everaldo-Martins](https://github-readme-stats.vercel.app/api/top-langs/?username=Everaldo-Martins&layout=donut&theme=transparent&hide_border=true)
     
 ##
 
