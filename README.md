@@ -8,7 +8,7 @@
 
 > 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB**_.
 
-> 👨🏽‍💼 _I'm passionate about programming and technology, it's fun to learn new techniques and ways and develop new work_.
+> 👨🏽‍💼 _I'm passionate about programming and technology. It's fun to learn new techniques, explore different methods, and develop innovative solutions._
 
 ### Contact
 
