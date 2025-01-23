@@ -27,7 +27,8 @@
     
 ##
 
-<code style="display: flex; justify-content: center; gap: 8px; padding: 8px; border-radius: 8px">
+<section style="background-color: #323232; display: flex; justify-content: center; gap: 8px; width: 100%; padding: 8px; border-radius: 8px">
+
 <img height="25" alt="flutter" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"/>
 
 <img height="25" alt="nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
@@ -51,4 +52,5 @@
 <img height="25" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
 
 <img height="25" alt="javascript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/>
-</code>
+
+</section>
