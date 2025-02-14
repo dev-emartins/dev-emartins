@@ -2,11 +2,11 @@
 
 ### About me
 
-> 👨🏽‍🎓 _I'm a **Computer Technician** - **IFPB - Instituto Federal da Paraíba**_.
+> 👨🏽‍🎓 _A **Computer Technician** - **IFPB - Instituto Federal da Paraíba**_.
 
-> 👨🏽‍💻 _I'm studying **Computer Science** - **UEPB - Universidade Estadual da Paraíba**_.
+> 👨🏽‍💻 _Studying **Computer Science** - **UEPB - Universidade Estadual da Paraíba**_.
 
-> 👨🏽‍💼 _I'm passionate about programming and technology. It's fun to learn new techniques, explore different methods, and develop innovative solutions._
+> 👨🏽‍💼 _I am passionate about programming and technology. I love learning new techniques, exploring different approaches, and creating innovative solutions that make a difference. I have knowledge of Node.js, React/Vite, Next.js, Tailwind, MongoDB, and Flutter. Currently, I am continuously improving myself to perform programming tasks with excellence._
 
 ### Contact
 
