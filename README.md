@@ -1,8 +1,6 @@
-# My Home Page
+# 👋🏽 _Hello, I'm **Everaldo Martins**_.
 
 ### About me
-
-> 👋🏽 _Hello, I'm **Everaldo Martins**_.
 
 > 👨🏽‍🎓 _I'm a **Computer Technician** - **IFPB - Instituto Federal da Paraíba**_.
 
