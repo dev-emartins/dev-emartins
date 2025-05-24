@@ -17,11 +17,11 @@
 ### Job Statistics
 ##
 
-![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=Everaldo-Martins&show_icons=true&theme=transparent&hide_border=true)
+![Everaldo-Martins](https://github-readme-stats.vercel.app/api?username=dev-emartins&show_icons=true&theme=transparent&hide_border=true)
 
 ##
 
-![Everaldo-Martins](https://github-readme-stats.vercel.app/api/top-langs/?username=Everaldo-Martins&layout=donut&theme=transparent&hide_border=true)
+![Everaldo-Martins](https://github-readme-stats.vercel.app/api/top-langs/?username=dev-emartins&layout=donut&theme=transparent&hide_border=true)
     
 ##
 
