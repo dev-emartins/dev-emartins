@@ -81,9 +81,3 @@
 </table>
 
 #
-
-<div>
-    <p style="width: 100%; display: flex; justify-content: center; align-items: center;">
-    Desenvolvido com <img height=20 src="./assets/images/heart.gif" /> por @dev-emartins
-    </p>
-</div>
