@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+}
+
+:root {
+  --background: #fcfcfc;
+  --foreground: #333333;
+}
+
+.dark {
+  --background: #222222;
+  --foreground: #f2f2f2;
+}
+
+*,
+*::before,
+*::after {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+#root {
+  background-color: var(--background);
+  color: var(--foreground);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animate for typewriter */
+:root {
+  --animate-blink: blink 1.5s infinite;
+}
+  
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

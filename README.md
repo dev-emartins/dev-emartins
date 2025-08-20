@@ -17,17 +17,17 @@
     <tr>    
         <td>
             <a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">
-                <img height=50 src="./assets/images/email.png" alt="Contato" />
+                <img height=50 src="./public/email.png" alt="Contato" />
             </a> 
         </td>
         <td>
             <a href="https://www.linkedin.com/in/everaldomartins" target="_blank">
-                <img height=50 src="./assets/images/linkedin.png" alt="Linkedin" />
+                <img height=50 src="./public/linkedin.png" alt="Linkedin" />
             </a>
         </td>
         <td>
             <a href="https://www.instagram.com/dev_emartins" target="_blank">
-                <img height=50 src="./assets/images/instagram.png" alt="Instagran" />
+                <img height=50 src="./public/instagram.png" alt="Instagran" />
             </a>
         </td>
     </tr>
