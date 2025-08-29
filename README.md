@@ -13,7 +13,7 @@
 
 ### Contact me
 
-<table>    
+<table style="border-radius: 8px;">    
     <tr>    
         <td>
             <a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">
@@ -30,12 +30,17 @@
                 <img height=50 src="./public/instagram.png" alt="Instagran" />
             </a>
         </td>
+        <td>
+            <a href="https://dev-emartins.vercel.app/" target="_blank">
+                <img height=50 src="./public/icon.png" alt="Instagran" />
+            </a>
+        </td>
     </tr>
 </table>
 
 ### Job Statistics
 
-<table style="width: 100%;">
+<table style="width: 100%; border-radius: 8px;">
     <tr>
         <td>
             <img src="https://github-readme-stats.vercel.app/api?username=dev-emartins&show_icons=true&theme=transparent&hide_border=true" alt="Everaldo-Martins" /> 
@@ -48,7 +53,7 @@
 
 ### Learning
 
-<table>
+<table style="border-radius: 8px;">
     <tr>
         <td width=60>
             <img alt="flutter" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"/>               
