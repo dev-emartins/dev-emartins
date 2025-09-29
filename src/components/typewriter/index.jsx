@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-const texts = ["Web Designer", "Desenvolvedor", "Engenheiro de Softwares"]
+const texts = ["Desenvolvedor Backend", "Desenvolvedor Frontend", "Desenvolvedor Full Stack", "Engenheiro de Softwares"]
 const typingSpeed = 300
 const erasingSpeed = 150
 const delayAfterTyping = 1500
