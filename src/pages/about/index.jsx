@@ -14,7 +14,7 @@ function About(){
                 <h4 className="text-xl font-bold">Olá! Sou Everaldo Martins</h4>
                 <p className="text-base text-justify leading-relaxed">
                     Sou um desenvolvedor apaixonado por tecnologia em busca da minha primeira oportunidade para adquerir experiência criando soluções web
-                    modernas e eficientes. Desenvolverdor Frontend/Backend, tenho me dedicado a estudar novas técnologias como React, Next.js, Node.js, Spring Boot, Java e tecnologias cloud.
+                    modernas e eficientes. Desenvolverdor Frontend/Backend, tenho me dedicado a estudar novas técnologias como React, Next.js, Node.js, Spring Boot, Java, Bancos de Dados (Relacionais: PostgreSQL e MySQL e Não-Relacionais: MongoDB) e tecnologias cloud.
                 </p>
                 <p className="text-base text-justify leading-relaxed">
                     Minha jornada começou com o desejo de entender como as coisas funcionam por trás das telas. Desde então, tenho me aprofundado em
