@@ -56,14 +56,13 @@
 <table style="border-radius: 8px;">
     <tr>
         <td width=60>
-            <img alt="flutter" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"/>               
         </td>
         <td width=60>
-            <img alt="nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
+            <img alt="Java" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Java.svg">
         </td>
         <td width=60>
-            <img alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
-        </td>
+            <img alt="Kotlin" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Kotlin.svg">
+        </td>        
         <td width=60>
             <img alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"/>
         </td>
