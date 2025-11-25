@@ -30,11 +30,6 @@
                 <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Instagram.svg" alt="Instagram" />
             </a>
         </td>
-        <td>
-            <a href="https://dev-emartins.vercel.app/" target="_blank">
-                <img height=50 src="./public/icon.png" alt="Portfólio" />
-            </a>
-        </td>
     </tr>
 </table>
 
