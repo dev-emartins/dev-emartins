@@ -17,22 +17,22 @@
     <tr>    
         <td>
             <a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">
-                <img height=50 src="./public/email.png" alt="Contato" />
+                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Gmail.svg" alt="Contato" />
             </a> 
         </td>
         <td>
             <a href="https://www.linkedin.com/in/everaldomartins" target="_blank">
-                <img height=50 src="./public/linkedin.png" alt="Linkedin" />
+                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Linkedin.svg" alt="Linkedin" />
             </a>
         </td>
         <td>
             <a href="https://www.instagram.com/dev_emartins" target="_blank">
-                <img height=50 src="./public/instagram.png" alt="Instagran" />
+                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Instagram.svg" alt="Instagram" />
             </a>
         </td>
         <td>
             <a href="https://dev-emartins.vercel.app/" target="_blank">
-                <img height=50 src="./public/icon.png" alt="Instagran" />
+                <img height=50 src="./public/icon.png" alt="Portfólio" />
             </a>
         </td>
     </tr>
