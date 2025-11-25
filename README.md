@@ -38,7 +38,7 @@
 <table style="width: 100%; border-radius: 8px;">
     <tr>
         <td>
-            <img src="https://github-readme-stats.vercel.app/api?username=dev-emartins&show_icons=true&theme=transparent&hide_border=true" alt="Everaldo-Martins" /> 
+            <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=dev-emartins&hide_border=true" alt="GitHub Streak" /></a> 
         </td>
         <td>
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-emartins&layout=donut&theme=transparent&hide_border=true" alt="Everaldo-Martins" />
