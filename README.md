@@ -56,28 +56,31 @@
 <table style="border-radius: 8px;">
     <tr>
         <td width=60>
-            <img alt="Java" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Java.svg">
+            <img alt="Java" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Java.svg">
         </td>
         <td width=60>
-            <img alt="Kotlin" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Kotlin.svg">
-        </td>        
+            <img alt="Kotlin" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Kotlin.svg">
+        </td> 
         <td width=60>
-            <img alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"/>
+            <img alt="React" src="https://github.com/gui-bus/TechIcons/blob/main/Light/React.svg">
         </td>
         <td width=60>
-            <img alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+            <img alt="Spring Boot" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Spring Boot.svg">
         </td>
         <td width=60>
-            <img alt="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+            <img alt="PostgreSQL" src="https://github.com/gui-bus/TechIcons/blob/main/Light/PostgreSQL.svg">
         </td>
         <td width=60>
-            <img alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+            <img alt="MongoDB" src="https://github.com/gui-bus/TechIcons/blob/main/Light/MongoDB.svg">
         </td>
         <td width=60>
-            <img alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"/>
+            <img alt="Docker" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Docker.svg">
         </td>
         <td width=60>
-            <img alt="postgresql" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"/>
+            <img alt="Kubernetes" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Kubernetes.svg">
+        </td>
+        <td width=60>
+            <img alt="AWS" src="https://github.com/gui-bus/TechIcons/blob/main/Light/AWS.svg">
         </td>
     </tr>
 </table>
