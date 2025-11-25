@@ -37,8 +37,8 @@
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dev-emartins&theme=github_dark" width="100%">
 
 <p>
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dev-emartins&theme=github_dark&utcOffset=8" width="49.8%">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dev-emartins&theme=github_dark" width="49.8%">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dev-emartins&theme=github_dark&utcOffset=8" width="49.5%">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dev-emartins&theme=github_dark" width="49.5%">
 </p>
 
 ### Learning
