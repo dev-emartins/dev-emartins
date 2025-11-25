@@ -58,7 +58,7 @@
             <img alt="Spring Boot" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Spring Boot.svg">
         </td>
         <td width=60>
-            <img alt="PostgreSQL" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/PostgreSQL.svg">
+            <img alt="PostgreSQL" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Postgresql.svg">
         </td>
         <td width=60>
             <img alt="MongoDB" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/MongoDB.svg">
