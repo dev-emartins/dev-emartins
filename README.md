@@ -38,10 +38,10 @@
 <table style="width: 100%; border-radius: 8px;">
     <tr>
         <td>
-            <img src="https://streak-stats.demolab.com?user=dev-emartins&theme=dark&hide_border=true" alt="GitHub Streak" />
+            <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dev-emartins&theme=dark&utcOffset=8" alt="Dev Emartins" />
         </td>
         <td>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-emartins&layout=donut&theme=transparent&hide_border=true" alt="Dev Emartins" />
+            <img src="[http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dev-emartins&theme=dark" alt="Dev Emartins" />
         </td>
     </tr>
 </table>
