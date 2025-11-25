@@ -13,21 +13,21 @@
 
 ### Contact me
 
-<table style="border-radius: 8px;">    
+<table>    
     <tr>    
         <td>
             <a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">
-                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Gmail.svg" alt="Contato" />
+                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Gmail.svg" alt="Contato" />
             </a> 
         </td>
         <td>
             <a href="https://www.linkedin.com/in/everaldomartins" target="_blank">
-                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Linkedin.svg" alt="Linkedin" />
+                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Linkedin.svg" alt="Linkedin" />
             </a>
         </td>
         <td>
             <a href="https://www.instagram.com/dev_emartins" target="_blank">
-                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Light/Instagram.svg" alt="Instagram" />
+                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Instagram.svg" alt="Instagram" />
             </a>
         </td>
     </tr>
