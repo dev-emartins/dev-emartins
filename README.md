@@ -34,7 +34,7 @@
 </table>
 
 ### Job Statistics
-<table style="width: 100%; border-radius: 8px;">
+<table style="width: 100%; border: 0px;">
     <tr>
         <td>
             <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dev-emartins&theme=github_dark" alt="Dev Emartins" />
@@ -42,7 +42,7 @@
     </tr>
 </table>
 
-<table style="width: 100%; border-radius: 8px;">
+<table style="width: 100%; border: 0px;">
     <tr>
         <td>
             <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dev-emartins&theme=github_dark&utcOffset=8" alt="Dev Emartins" />
