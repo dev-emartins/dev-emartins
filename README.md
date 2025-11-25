@@ -38,10 +38,10 @@
 <table style="width: 100%; border-radius: 8px;">
     <tr>
         <td>
-            <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=dev-emartins&hide_border=true" alt="GitHub Streak" /></a> 
+            <img src="https://streak-stats.demolab.com?user=dev-emartins&hide_border=true" alt="Dev Emartins" />
         </td>
         <td>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-emartins&layout=donut&theme=transparent&hide_border=true" alt="Everaldo-Martins" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-emartins&layout=donut&theme=transparent&hide_border=true" alt="Dev Emartins" />
         </td>
     </tr>
 </table>
