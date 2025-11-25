@@ -34,24 +34,9 @@
 </table>
 
 ### Job Statistics
-<table style="width: 100%; border: 0px;">
-    <tr>
-        <td>
-            <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dev-emartins&theme=github_dark" alt="Dev Emartins" />
-        </td>
-    </tr>
-</table>
-
-<table style="width: 100%; border: 0px;">
-    <tr>
-        <td>
-            <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dev-emartins&theme=github_dark&utcOffset=8" alt="Dev Emartins" />
-        </td>
-        <td>
-            <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dev-emartins&theme=github_dark" alt="Dev Emartins" />
-        </td>
-    </tr>
-</table>
+<img width=100 src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dev-emartins&theme=github_dark" alt="Dev Emartins" />
+<img width=50 src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=dev-emartins&theme=github_dark&utcOffset=8" alt="Dev Emartins" />
+<img width=50 src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dev-emartins&theme=github_dark" alt="Dev Emartins" />
 
 ### Learning
 
