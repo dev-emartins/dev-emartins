@@ -43,34 +43,34 @@
 
 ### Learning
 
-<table style="border-radius: 8px;">
+<table>
     <tr>
         <td width=60>
-            <img alt="Java" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Java.svg">
+            <img alt="Java" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Java.svg">
         </td>
         <td width=60>
-            <img alt="Kotlin" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Kotlin.svg">
+            <img alt="Kotlin" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Kotlin.svg">
         </td> 
         <td width=60>
-            <img alt="React" src="https://github.com/gui-bus/TechIcons/blob/main/Light/React.svg">
+            <img alt="React" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/React.svg">
         </td>
         <td width=60>
-            <img alt="Spring Boot" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Spring Boot.svg">
+            <img alt="Spring Boot" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Spring Boot.svg">
         </td>
         <td width=60>
-            <img alt="PostgreSQL" src="https://github.com/gui-bus/TechIcons/blob/main/Light/PostgreSQL.svg">
+            <img alt="PostgreSQL" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/PostgreSQL.svg">
         </td>
         <td width=60>
-            <img alt="MongoDB" src="https://github.com/gui-bus/TechIcons/blob/main/Light/MongoDB.svg">
+            <img alt="MongoDB" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/MongoDB.svg">
         </td>
         <td width=60>
-            <img alt="Docker" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Docker.svg">
+            <img alt="Docker" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Docker.svg">
         </td>
         <td width=60>
-            <img alt="Kubernetes" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Kubernetes.svg">
+            <img alt="Kubernetes" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Kubernetes.svg">
         </td>
         <td width=60>
-            <img alt="AWS" src="https://github.com/gui-bus/TechIcons/blob/main/Light/AWS.svg">
+            <img alt="AWS" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/AWS.svg">
         </td>
     </tr>
 </table>
