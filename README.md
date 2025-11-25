@@ -56,10 +56,10 @@
 <table style="border-radius: 8px;">
     <tr>
         <td width=60>
-            <img alt="Java" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/White/Java.svg">
+            <img alt="Java" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Java.svg">
         </td>
         <td width=60>
-            <img alt="Kotlin" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/White/Kotlin.svg">
+            <img alt="Kotlin" height="60" width="60" src="https://github.com/gui-bus/TechIcons/blob/main/Light/Kotlin.svg">
         </td>        
         <td width=60>
             <img alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"/>
