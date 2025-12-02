@@ -47,10 +47,7 @@
     <tr>
         <td width=60>
             <img alt="Java" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Java.svg">
-        </td>
-        <td width=60>
-            <img alt="Kotlin" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Kotlin.svg">
-        </td> 
+        </td>        
         <td width=60>
             <img alt="React" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/React.svg">
         </td>
