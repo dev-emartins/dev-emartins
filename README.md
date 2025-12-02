@@ -8,7 +8,7 @@
 
 > 👨🏽‍💻 *Currently studying **Computer Science** at **UEPB - State University of Paraíba**.*
 
-> 👨🏽‍💼 *Passionate about programming and technology, I enjoy learning new techniques, exploring different approaches, and developing innovative solutions that make an impact. I have experience with Java, Node.js, React/Vite, Tailwind, PostgreSQL, MongoDB, and Flutter. I'm currently focused on continuously improving to deliver high-quality programming solutions.*
+> 👨🏽‍💼 *Passionate about software development, I enjoy learning new technologies, exploring effective approaches, and building solutions that add real value. I have experience with Java, Spring Boot, REST APIs, PostgreSQL, MySQL and basic MongoDB, along with complementary knowledge in React. I’m also familiar with tools and platforms such as Docker, Kubernetes, Kafka, AWS, and observability solutions like Grafana, Prometheus and Splunk. I’m focused on continuous improvement to deliver clean, reliable, and high-quality backend solutions.*
 
 
 ### Contact me
