@@ -1,4 +1,4 @@
-import { FaCircleRight, FaCloud, FaCode, FaCrop, FaDatabase, FaGlobe, FaMobileScreen } from "react-icons/fa6"
+import { FaCloud, FaCode, FaCrop, FaDatabase, FaGlobe, FaMobileScreen, FaFeatherPointed, FaFileCode, FaTerminal, FaFilePen} from "react-icons/fa6"
 
 function Skills() {
     const skillCategories = [
@@ -6,61 +6,76 @@ function Skills() {
             title: "Frontend",
             icon: <FaCode className="text-3xl" />,
             skills: [
-                { name: "React", level: 95 },
-                { name: "JavaScript", level: 95 },
-                { name: "TypeScript", level: 85 }, 
-                { name: "HTML", level: 95 },
-                { name: "CSS", level: 95 },
-                { name: "Tailwind CSS", level: 90 },
+                { name: "React(Vite)", icon: <FaFeatherPointed />, level: 95 },
+                { name: "Vue", icon: <FaFeatherPointed />, level: 95 },
+                { name: "NextJS", icon: <FaFeatherPointed />, level: 85 }, 
+                { name: "HTML", icon: <FaFeatherPointed />, level: 95 },
+                { name: "CSS", icon: <FaFeatherPointed />, level: 95 },
+                { name: "Tailwind CSS", icon: <FaFeatherPointed />, level: 90 }
             ],
         },
         {
             title: "Backend",
             icon: <FaDatabase className="text-3xl" />,
             skills: [
-                { name: "Java", level: 90 },
-                { name: "Spring Boot", level: 85 },
-                { name: "NodeJS", level: 80 },
-                { name: "PostgreSQL", level: 80 },
-                { name: "MySQL", level: 80 },
-                { name: "MongoDB", level: 60 },
+                { name: "Java", icon: <FaFileCode />, level: 90 },
+                { name: "Spring Boot", icon: <FaFileCode />, level: 85 },
+                { name: "NodeJS", icon: <FaFileCode />, level: 80 },
+                { name: "PostgreSQL", icon: <FaFileCode />, level: 80 },
+                { name: "MySQL", icon: <FaFileCode />, level: 80 },
+                { name: "MongoDB", icon: <FaFileCode />, level: 60 }
             ],
         },
         {
             title: "Cloud & DevOps",
             icon: <FaCloud className="text-3xl" />,
             skills: [
-                { name: "AWS", level: 60 },
-                { name: "Docker", level: 65 },
-                { name: "Vercel", level: 90 },
-                { name: "Git", level: 95 },
+                { name: "AWS", icon: <FaTerminal />, level: 60 },
+                { name: "Docker", icon: <FaTerminal />, level: 65 },
+                { name: "Kubernetes", icon: <FaTerminal />, level: 90 },
+                { name: "Git", icon: <FaTerminal />, level: 95 }
             ],
         },
         {
             title: "Design & UX",
             icon: <FaCrop className="text-3xl" />,
-            skills: [
-                { name: "Figma", level: 60 },
-                { name: "UI/UX Design", level: 75 },
-                { name: "Responsive Design", level: 90 },
-                { name: "Accessibility", level: 85 },
+            skills: [                
+                { name: "UI/UX Design", icon: <FaFilePen />, level: 75 },
+                { name: "Responsive Design", icon: <FaFilePen />, level: 90 },
+                { name: "Accessibility", icon: <FaFilePen />, level: 85 },
+                { name: "Figma", icon: <FaFilePen />, level: 60 }
             ],
         },
     ]
 
     const tools = [
         "VS Code",
-        "IntelliJ",
-        "Figma",
-        "Postman",
+        "IntelliJ IDEA",        
+        "Git",
         "GitHub",
-        "GitFlow",
-        "Tailwind CSS",
-        "Vite",
-        "NextJS",
-        "ESLint",
-        "Prettier",
-    ]
+        "GitFlow",        
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "AWS",
+        "Vercel",
+        "Maven",
+        "Gradle",
+        "Swagger UI",
+        "Jenkins",
+        "Postman",
+        "JUnit5",
+        "Mockito",
+        "JaCoCo",
+        "SonarQube",
+        "Jira",
+        "Confluence",        
+        "Splunk",
+        "Prometheus",
+        "Grafana",
+        "Postman",
+        "Linux"
+    ];
 
     return (
         <section className="w-full max-w-7xl px-4">
@@ -83,7 +98,7 @@ function Skills() {
                             {category.skills.map((skill, iskill) => (
                                 <div key={ iskill } className="space-y-2">
                                     <div className="flex justify-between items-center">
-                                        <span className="font-thin"><FaCircleRight /></span>
+                                        <span className="font-thin">{ skill.icon }</span>
                                         <span className="font-medium">{ skill.name }</span>
                                     </div>
                                     <div className="w-full bg-(--foreground) rounded-full h-0.5 overflow-hidden">                                        
