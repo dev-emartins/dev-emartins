@@ -1,4 +1,4 @@
-import { FaCloud, FaCode, FaCrop, FaDatabase, FaGlobe, FaMobileScreen } from "react-icons/fa6"
+import { FaCircleRight, FaCloud, FaCode, FaCrop, FaDatabase, FaGlobe, FaMobileScreen } from "react-icons/fa6"
 
 function Skills() {
     const skillCategories = [
@@ -9,6 +9,8 @@ function Skills() {
                 { name: "React", level: 95 },
                 { name: "JavaScript", level: 95 },
                 { name: "TypeScript", level: 85 }, 
+                { name: "HTML", level: 95 },
+                { name: "CSS", level: 95 },
                 { name: "Tailwind CSS", level: 90 },
             ],
         },
@@ -16,9 +18,11 @@ function Skills() {
             title: "Backend",
             icon: <FaDatabase className="text-3xl" />,
             skills: [
+                { name: "Java", level: 90 },
                 { name: "Spring Boot", level: 85 },
                 { name: "NodeJS", level: 80 },
-                { name: "PostgreSQL", level: 65 },
+                { name: "PostgreSQL", level: 80 },
+                { name: "MySQL", level: 80 },
                 { name: "MongoDB", level: 60 },
             ],
         },
@@ -79,16 +83,10 @@ function Skills() {
                             {category.skills.map((skill, iskill) => (
                                 <div key={ iskill } className="space-y-2">
                                     <div className="flex justify-between items-center">
+                                        <span className="font-thin"><FaCircleRight /></span>
                                         <span className="font-medium">{ skill.name }</span>
-                                        <span className="text-sm">{ skill.level }%</span>
                                     </div>
-                                    <div className="w-full bg-(--foreground)/50 rounded-full h-2 overflow-hidden">
-                                        <span 
-                                        className="block h-2 rounded-full bg-(--foreground)"
-                                        style={{
-                                            width: `${skill.level}%`,
-                                        }}
-                                        ></span>
+                                    <div className="w-full bg-(--foreground) rounded-full h-0.5 overflow-hidden">                                        
                                     </div>
                                 </div>
                             ))}
