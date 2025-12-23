@@ -1,56 +1,52 @@
-import { FaCloud, FaCode, FaCrop, FaDatabase, FaGlobe, FaMobileScreen, FaFeatherPointed, FaFileCode, FaTerminal, FaFilePen} from "react-icons/fa6"
+import { FaCloud, FaCode, FaGlobe, FaMobileScreen, FaTerminal, FaFilePen, FaChartArea, FaServer, FaLaptopCode, FaMicrochip} from "react-icons/fa6"
 
 function Skills() {
     const skillCategories = [
         {
             title: "Frontend",
-            icon: <FaCode className="text-3xl" />,
+            icon: <FaLaptopCode className="text-3xl" />,
             skills: [
-                { name: "React(Vite)", icon: <FaFeatherPointed />, level: 95 },
-                { name: "Vue", icon: <FaFeatherPointed />, level: 95 },
-                { name: "NextJS", icon: <FaFeatherPointed />, level: 85 }, 
-                { name: "HTML", icon: <FaFeatherPointed />, level: 95 },
-                { name: "CSS", icon: <FaFeatherPointed />, level: 95 },
-                { name: "Tailwind CSS", icon: <FaFeatherPointed />, level: 90 }
+                { name: "React(Vite)", icon: <FaCode /> },
+                { name: "HTML", icon: <FaCode /> },
+                { name: "CSS", icon: <FaCode /> },
+                { name: "Tailwind CSS", icon: <FaCode /> }
             ],
         },
         {
             title: "Backend",
-            icon: <FaDatabase className="text-3xl" />,
+            icon: <FaServer className="text-3xl" />,
             skills: [
-                { name: "Java", icon: <FaFileCode />, level: 90 },
-                { name: "Spring Boot", icon: <FaFileCode />, level: 85 },
-                { name: "NodeJS", icon: <FaFileCode />, level: 80 },
-                { name: "PostgreSQL", icon: <FaFileCode />, level: 80 },
-                { name: "MySQL", icon: <FaFileCode />, level: 80 },
-                { name: "MongoDB", icon: <FaFileCode />, level: 60 }
+                { name: "Java", icon: <FaMicrochip /> },
+                { name: "Spring Boot", icon: <FaMicrochip /> },
+                { name: "NodeJS", icon: <FaMicrochip /> },
+                { name: "PostgreSQL", icon: <FaMicrochip /> }
             ],
         },
         {
             title: "Cloud & DevOps",
             icon: <FaCloud className="text-3xl" />,
             skills: [
-                { name: "AWS", icon: <FaTerminal />, level: 60 },
-                { name: "Docker", icon: <FaTerminal />, level: 65 },
-                { name: "Kubernetes", icon: <FaTerminal />, level: 90 },
-                { name: "Git", icon: <FaTerminal />, level: 95 }
+                { name: "AWS", icon: <FaTerminal /> },
+                { name: "Docker", icon: <FaTerminal /> },
+                { name: "Kubernetes", icon: <FaTerminal /> },
+                { name: "CI/CD", icon: <FaTerminal /> }
             ],
         },
         {
-            title: "Design & UX",
-            icon: <FaCrop className="text-3xl" />,
+            title: "Monitoramento & Logging",
+            icon: <FaChartArea className="text-3xl" />,
             skills: [                
-                { name: "UI/UX Design", icon: <FaFilePen />, level: 75 },
-                { name: "Responsive Design", icon: <FaFilePen />, level: 90 },
-                { name: "Accessibility", icon: <FaFilePen />, level: 85 },
-                { name: "Figma", icon: <FaFilePen />, level: 60 }
+                { name: "Prometheus", icon: <FaFilePen /> },
+                { name: "Grafana", icon: <FaFilePen /> },
+                { name: "Splunk", icon: <FaFilePen /> },
+                { name: "Logstash", icon: <FaFilePen /> }
             ],
         },
     ]
 
     const tools = [
         "VS Code",
-        "IntelliJ IDEA",        
+        "IntelliJ",        
         "Git",
         "GitHub",
         "GitFlow",        
@@ -62,6 +58,7 @@ function Skills() {
         "Maven",
         "Gradle",
         "Swagger UI",
+        "CI/CD",
         "Jenkins",
         "Postman",
         "JUnit5",
