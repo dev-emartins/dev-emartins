@@ -5,7 +5,7 @@ function About(){
     return (
         <section className="w-full max-w-7xl flex flex-col md:flex-row items-start justify-center gap-3">
             <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
-                <figure className="w-10/12 rounded-2xl shadow-2xs shadow-(--foreground)/60">
+                <figure className="w-11/12 md:w-3/4 rounded-2xl shadow-2xs shadow-(--foreground)/60">
                     <img className="rounded-2xl" src={ about_user } alt="Image DEM" />
                 </figure>
             </div>
