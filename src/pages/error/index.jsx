@@ -1,4 +1,4 @@
-import { isRouteErrorResponse, useRouteError } from "react-router-dom"
+import { isRouteErrorResponse, useRouteError } from "react-router"
 import { FaChevronLeft } from "react-icons/fa6"
 import figure from "@/assets/figure.png"
 import ButtonLink from "@/components/buttonlink"
@@ -22,8 +22,8 @@ function ErrorPage(){
 
     return (
         <div className="min-h-screen flex flex-col">            
-            <div className="flex-grow flex flex-col items-center justify-center p-4 text-center">
-                <img src={ figure } className="w-full max-w-48 mb-[-1rem] z-10" alt="Error" />
+            <div className="grow flex flex-col items-center justify-center p-4 text-center">
+                <img src={ figure } className="w-full max-w-48 -mb-4 z-10" alt="Error" />
                 <h1 className="w-full text-9xl font-black">{ error.status }</h1>
                 <p className="text-xl">{ translateStatusText(error.statusText) }</p>
                 <div className="w-full max-w-7xl flex justify-center items-center py-5">

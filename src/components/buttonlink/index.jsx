@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router"
 
 function ButtonLink({ icon: Icon, text: text, link: link }) {
     return (

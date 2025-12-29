@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane, FaPhone } from "react-icons/fa6"
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane } from "react-icons/fa6"
 import Social from "@/components/social"
 import Button from "@/components/button"
 import Input from "@/components/input"

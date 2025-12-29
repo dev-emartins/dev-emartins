@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react"
 import { FaBars, FaCircleXmark, FaMoon, FaSun } from "react-icons/fa6"
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router"
 import Logo from "./Logo"
 
 function Header() {
@@ -24,12 +24,13 @@ function Header() {
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false)
+        setIsMenuOpen(false)        
       }
     }
 
     if (isMenuOpen) {
       document.addEventListener('mousedown', handleClickOutside)
+      document.body.style.overflow = 'hidden'
     } else {
       document.removeEventListener('mousedown', handleClickOutside)
     }
@@ -54,23 +55,23 @@ function Header() {
             <Logo />
           </Link>
 
-          <div className="hidden py-3 md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             {menu_itens.map(item => (
               <NavLink
-                key={item.name}
-                to={item.path}
-                className="hover:text-(--foreground)/60"
+                key={ item.name }
+                to={ item.path }
+                className="py-2 px-4 rounded-full transition-colors text-base hover:bg-(--foreground)/20 cursor-pointer"
               >
-                {item.name}
+                { item.name }
               </NavLink>
             ))}            
           </div>
           <div className="flex items-center gap-5">            
             <button
-              onClick={toggleTheme}
+              onClick={ toggleTheme }
               className="p-2 text-xl rounded-full transition-colors hover:bg-(--foreground)/20 cursor-pointer"
             >
-              {theme === 'dark' 
+              { theme === 'dark' 
                 ? <FaSun />
                 : <FaMoon /> 
               }
@@ -79,22 +80,22 @@ function Header() {
               className="md:hidden text-(--accent) cursor-pointer"
               onClick={toggleMenu}
             >
-              {isMenuOpen ? <FaCircleXmark className='text-2xl' /> : <FaBars className='text-2xl' />}
+              { isMenuOpen ? <FaCircleXmark className='text-2xl' /> : <FaBars className='text-2xl' />}
             </button>
           </div>          
         </div>
         
         {isMenuOpen && (
-          <div ref={ menuRef } className="bg-(--background) md:hidden w-full h-1/3 absolute left-0 z-50 px-5 py-3 shadow-lg">
-            <div className="h-full flex flex-col justify-center items-center gap-8">
+          <div ref={ menuRef } className="bg-(--background) md:hidden w-full h-full absolute left-0 z-50 px-5 shadow-lg">
+            <div className="h-full flex flex-col justify-center items-center gap-4">
               {menu_itens.map(item => (
                 <NavLink
-                  key={item.name}
-                  to={item.path}
-                  className="text-xl hover:text-(--foreground)/60"
-                  onClick={toggleMenu}
+                  key={ item.name }
+                  to={ item.path }
+                  className="w-full p-2 rounded-full transition-colors text-xl text-center bg-(--foreground)/8 cursor-pointer"
+                  onClick={ toggleMenu }
                 >
-                  {item.name}
+                  { item.name }
                 </NavLink>
               ))}              
             </div>
