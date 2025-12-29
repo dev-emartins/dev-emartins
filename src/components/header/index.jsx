@@ -26,17 +26,16 @@ function Header() {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsMenuOpen(false)        
       }
-    }
+    }  
 
     if (isMenuOpen) {
       document.addEventListener('mousedown', handleClickOutside)
       document.body.style.overflow = 'hidden'
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
+    } 
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
+      document.body.style.overflow = 'auto'
     }
   }, [isMenuOpen])
 
