@@ -28,7 +28,7 @@ function Home(){
                 </div>
             </div>
             <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
-                <figure className="w-4/5 block overflow-hidden bg-(--foreground)/10 backdrop-blur-xs rounded-full shadow-2xs shadow-(--foreground)/80">
+                <figure className="w-2/3 block overflow-hidden bg-(--foreground)/10 backdrop-blur-xs rounded-full shadow-2xs shadow-(--foreground)/80">
                     <img className="w-full p-0" src={ user } alt="Image DEM" />
                 </figure>
             </div>
