@@ -18,7 +18,7 @@ function Home(){
                     { <Typewriter  /> }
                 </h4>
                 <div className="w-full p-4 flex justify-center md:justify-start gap-4">
-                    <Social icon={ FaEnvelope } link="mailto:everaldoinfortecnico@gmail.com" />
+                    <Social icon={ FaEnvelope } link="mailto:dev.everaldomartins@gmail.com" />
                     <Social icon={ FaLinkedin } link="https://www.linkedin.com/in/everaldomartins" />
                     <Social icon={ FaInstagram } link="https://www.instagram.com/dev_emartins" />
                     <Social icon={ FaGithub } link="https://github.com/dev-emartins" />                            

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane } from "react-icons/fa6"
+import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane } from "react-icons/fa6"
 import Social from "@/components/social"
 import Button from "@/components/button"
 import Input from "@/components/input"
@@ -17,8 +17,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault()
         // Handle form submission here
-        console.log("Form submitted:", formData)
-        alert("Este forma ainda não está implementada. Em breve você poderá enviar mensagens diretamente para mim!")
+        console.log("Form submitted:", formData)        
         // Reset form
         setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
     }
@@ -41,22 +40,19 @@ function Contact() {
                         </div>
                         <div className="text-sm">
                             <h3 className="font-semibold">Email</h3>
-                            <p>everaldoinfortecnico@gmail.com</p>
+                            <p>dev.everaldomartins@gmail.com</p>
                         </div>
                     </div>
-                    {
-                        /*
-                        <div className="flex items-center space-x-3">
-                            <div className="p-3 bg-(--foreground) text-(--background) rounded-full">
-                                <FaPhone className="text-xl" />
-                            </div>
-                            <div className="text-sm">
-                                <h3 className="font-semibold">Telefone</h3>
-                                <p>+55 (11) 99999-9999</p>
-                            </div>
+                    
+                    <div className="flex items-center space-x-3">
+                        <div className="p-3 bg-(--foreground) text-(--background) rounded-full">
+                            <FaPhone className="text-xl" />
                         </div>
-                        */
-                    }
+                        <div className="text-sm">
+                            <h3 className="font-semibold">Telefone</h3>
+                            <p>+55 (83) 9 9115-8460</p>
+                        </div>
+                    </div>
                     
                     <div className="flex items-center space-x-3">
                         <div className="p-3 bg-(--foreground) text-(--background) rounded-full">
