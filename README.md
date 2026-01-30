@@ -16,7 +16,7 @@
 <table>    
     <tr>    
         <td>
-            <a href="mailto:everaldoinfortecnico@gmail.com" target="_blank">
+            <a href="mailto:dev.everaldomartins@gmail.com" target="_blank">
                 <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Gmail.svg" alt="Contato" />
             </a> 
         </td>
