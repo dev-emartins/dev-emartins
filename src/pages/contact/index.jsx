@@ -1,9 +1,9 @@
-import { useState } from "react"
-import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane } from "react-icons/fa6"
-import Social from "@/components/social"
-import Button from "@/components/button"
-import Input from "@/components/input"
-import TextArea from "@/components/textarea"
+import { useState } from "react";
+import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane } from "react-icons/fa6";
+import Social from "@components/common/social";
+import Button from "@components/ui/button";
+import Input from "@components/ui/input";
+import TextArea from "@components/ui/textarea";
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -15,19 +15,37 @@ function Contact() {
     })
 
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         // Handle form submission here
-        console.log("Form submitted:", formData)        
+        console.log("Form submitted:", formData);     
         // Reset form
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     }
 
     const handleChange = (e) => {
         setFormData({
             ...formData,
         [   e.target.name]: e.target.value,
-        })
+        });
     }
+
+    const redesSociais = [
+        {
+            icon: FaGithub,
+            href: "https://github.com/dev-emartins",
+            label: "GitHub"
+        },
+        {
+            icon: FaLinkedin,
+            href: "https://www.linkedin.com/in/everaldomartins",
+            label: "LinkedIn"
+        },
+        {
+            icon: FaInstagram,
+            href: "https://www.instagram.com/dev_emartins",
+            label: "Instagram"
+        }
+    ];
     
     return (
         <section className="w-full max-w-7xl flex flex-col md:flex-row items-stretch justify-center gap-5">
@@ -68,9 +86,9 @@ function Contact() {
                 <div className="py-4 pt-5">
                     <h2 className="text-2xl mb-4">Redes sociais</h2>
                     <div className="flex space-x-4">
-                        <Social icon={ FaLinkedin } link="https://www.linkedin.com/in/everaldomartins" />
-                        <Social icon={ FaInstagram } link="https://www.instagram.com/dev_emartins" />
-                        <Social icon={ FaGithub } link="https://github.com/dev-emartins" />                            
+                        {redesSociais.map(item => (
+                            <Social label={ item.label } icon={ item.icon } link={ item.href } />
+                        ))}                            
                     </div>
                 </div>
                 
@@ -116,7 +134,7 @@ function Contact() {
                 </form>
             </div>
         </section>
-    )
+    );
 }
 
-export default Contact
+export default Contact;

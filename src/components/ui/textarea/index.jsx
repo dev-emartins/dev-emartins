@@ -9,11 +9,11 @@ function TextArea({ name, label, value, change, req= false, rows = 4 }) {
                 onChange={ change }
                 rows={ rows }
                 required={ req }
-                className="w-full flex justify-between items-center gap-2 rounded-2xl bg-transparent border-2 border-(--foreground) p-3 mt-1.5 outline-0"            
+                className="w-full flex justify-between items-center gap-2 rounded-2xl bg-transparent border-2 border-foreground p-3 mt-1.5 outline-0"            
             >
             </textarea>
         </>       
-    )
+    );
 }
 
-export default TextArea
+export default TextArea;

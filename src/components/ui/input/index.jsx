@@ -10,10 +10,10 @@ function Input({ name, ph = "", type = "text", req = false, label, value, change
                 placeholder={ ph }
                 onChange={ change }
                 required = { req }
-                className="w-full flex justify-between items-center gap-2 rounded-2xl bg-transparent border-2 border-(--foreground) p-3 mt-1.5 outline-0"            
+                className="w-full flex justify-between items-center gap-2 rounded-2xl bg-transparent border-2 border-foreground p-3 mt-1.5 outline-0"            
             />
         </>       
-    )
+    );
 }
 
-export default Input
+export default Input;

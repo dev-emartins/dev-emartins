@@ -1,12 +1,12 @@
-import { isRouteErrorResponse, useRouteError } from "react-router"
-import { FaChevronLeft } from "react-icons/fa6"
-import figure from "@/assets/figure.png"
-import ButtonLink from "@/components/buttonlink"
+import { isRouteErrorResponse, useRouteError } from "react-router-dom";
+import { FaChevronLeft } from "react-icons/fa6";
+import figure from "@assets/figure.png";
+import ButtonLink from "@components/ui/buttonlink";
 
 function ErrorPage(){
-    const error = useRouteError()
+    const error = useRouteError();
 
-    if (!isRouteErrorResponse(error)) return null
+    if (!isRouteErrorResponse(error)) return null;
 
     const statusTextMap = {
         "Not Found": "Desculpe, a página não foi encontrada.",
@@ -17,7 +17,7 @@ function ErrorPage(){
     }
 
     const translateStatusText = (statusText) => {
-        return statusTextMap[statusText] || "Ocorreu um erro inesperado."
+        return statusTextMap[statusText] || "Ocorreu um erro inesperado.";
     }
 
     return (
@@ -31,7 +31,7 @@ function ErrorPage(){
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default ErrorPage
+export default ErrorPage;

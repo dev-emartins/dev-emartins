@@ -1,11 +1,12 @@
-import { FaDownload } from "react-icons/fa6"
-import about_user from "@/assets/about_user.png"
+import { FaDownload } from "react-icons/fa6";
+import Download from "@components/ui/download";
+import about_user from "@assets/about_user.png";
 
 function About(){
     return (
         <section className="w-full max-w-7xl flex flex-col md:flex-row items-start justify-center gap-3">
             <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
-                <figure className="w-11/12 md:w-3/4 rounded-2xl shadow-2xs shadow-(--foreground)/60">
+                <figure className="w-11/12 md:w-1/2 bg-button/10 border-y border-button/60 rounded-lg">
                     <img className="rounded-2xl" src={ about_user } alt="Image DEM" />
                 </figure>
             </div>
@@ -24,21 +25,15 @@ function About(){
                     Acredito que a tecnologia deve ser acessível e útil para todos. Por isso, foco em criar interfaces
                     intuitivas e experiências de usuário excepcionais.
                 </p>
-                <div className="w-full py-5 flex justify-center md:justify-start items-center">
-                    <a 
-                    href="/curriculo.pdf" 
-                    target="_blank" 
-                    download="Currículo_Everaldo_Martins.pdf" 
-                    className="w-fit flex justify-between items-center gap-2 bg-(--foreground) text-(--background) px-8 py-3 rounded-full hover:bg-(--foreground)/80"
-                    rel="noopener noreferrer"
-                    >
-                        <FaDownload className="text-xl" /> 
-                        <span className="font-sans font-medium text-sm">Download CV</span>
-                    </a>
-                </div>
+                <Download 
+                    to="/curriculo.pdf" 
+                    label="Download CV" 
+                    download="Currículo_Everaldo_Martins.pdf"
+                    Icon={ FaDownload } 
+                />
             </div>
         </section>
-    )
+    );
 }
 
-export default About
+export default About;

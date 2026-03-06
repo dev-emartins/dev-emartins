@@ -1,4 +1,4 @@
-import { FaCloud, FaCode, FaGlobe, FaMobileScreen, FaTerminal, FaFilePen, FaChartArea, FaServer, FaLaptopCode, FaMicrochip} from "react-icons/fa6"
+import { FaCloud, FaCode, FaGlobe, FaMobileScreen, FaTerminal, FaFilePen, FaChartArea, FaServer, FaLaptopCode, FaMicrochip} from "react-icons/fa6";
 
 function Skills() {
     const skillCategories = [
@@ -42,7 +42,7 @@ function Skills() {
                 { name: "Logstash", icon: <FaFilePen /> }
             ],
         },
-    ]
+    ];
 
     const tools = [
         "VS Code",
@@ -149,7 +149,7 @@ function Skills() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Skills
+export default Skills;
