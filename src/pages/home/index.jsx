@@ -64,7 +64,7 @@ function Home(){
                 </div>
             </div>
             <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
-                <figure className="w-11/12 md:w-2/3 block overflow-hidden border-y border-button/60 rounded-lg">
+                <figure className="w-11/12 md:w-2/3 block overflow-hidden border-b border-button/60 rounded-lg">
                     <img className="w-full p-0 drop-shadow-xl drop-shadow-button/20" src={ user } alt="Image DEM" />
                 </figure>
             </div>

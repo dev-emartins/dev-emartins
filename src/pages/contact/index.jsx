@@ -113,24 +113,59 @@ function Contact() {
                 <form onSubmit={ handleSubmit } className="w-full max-w-3xl space-y-4">
                     <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                            <Input name="name" value={ formData.name } change={ handleChange } req={ true } label="Nome" />
+                            <Input 
+                                name="name" 
+                                value={ formData.name } 
+                                change={ handleChange } 
+                                required={ true } 
+                                label="Nome" 
+                            />
                         </div>
                         <div className="space-y-2"> 
-                            <Input name="email" value={ formData.email } type="email" change={ handleChange } req={ true } label="Email" /> 
+                            <Input 
+                                name="email" 
+                                value={ formData.email } 
+                                type="email" 
+                                change={ handleChange } 
+                                required={ true } 
+                                label="Email" 
+                            /> 
                         </div>
                     </div>                    
                     <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2"> 
-                            <Input name="phone" value={ formData.phone } type="phone" change={ handleChange } label="Telefone" /> 
+                            <Input 
+                                name="phone" 
+                                value={ formData.phone } 
+                                type="phone" 
+                                change={ handleChange } 
+                                label="Telefone" 
+                            /> 
                         </div>
                         <div className="space-y-2">
-                            <Input name="subject" value={ formData.subject } change={ handleChange } label="Assunto" />                                                
+                            <Input 
+                                name="subject" 
+                                value={ formData.subject } 
+                                change={ handleChange } 
+                                label="Assunto" 
+                            />                                                
                         </div>
                     </div>
                     <div className="space-y-2">
-                        <TextArea name="message" label="Mensagem" value={ formData.message } change={ handleChange } req={ true } rows={ 6 } />
+                        <TextArea 
+                            name="message" 
+                            label="Mensagem" 
+                            value={ formData.message } 
+                            change={ handleChange } 
+                            required={ true } 
+                            rows={ 6 } 
+                        />
                     </div>
-                    <Button icon={ FaPaperPlane } type="submit" text="Enviar mensagem" />
+                    <Button 
+                        icon={ FaPaperPlane }
+                        type="submit"
+                        text="Enviar formulário"
+                    />
                 </form>
             </div>
         </section>
