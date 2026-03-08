@@ -1,15 +1,12 @@
 import { useState } from "react";
-import { useForm, ValidationError } from '@formspree/react';
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { useForm, ValidationError } from "@formspree/react";
 import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane, FaCircleExclamation, FaCircleCheck } from "react-icons/fa6";
 import Social from "@components/common/social";
 import Button from "@components/ui/button";
 import Input from "@components/ui/input";
 import TextArea from "@components/ui/textarea";
 
-function Contact() {    
-    const { executeRecaptcha } = useGoogleReCaptcha();
-    
+function Contact() {        
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -18,11 +15,7 @@ function Contact() {
         message: "",
     }); 
     
-    const [state, handleSubmit] = useForm("meerogdv", {
-        data: {
-        "g-recaptcha-response": executeRecaptcha
-        }
-    });
+    const [state, handleSubmit] = useForm("meerogdv");
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -33,11 +26,7 @@ function Contact() {
     };
 
     const onSubmit = async (e) => {
-        e.preventDefault();
-        if (!executeRecaptcha) {
-            console.error("reCAPTCHA não carregado");
-            return;
-        }
+        e.preventDefault();        
         await handleSubmit(e);
     };
 
@@ -258,12 +247,7 @@ function Contact() {
                             field="message"
                             errors={ state.errors }
                             className="text-sm text-red-500 mt-1"
-                        />
-                        <input 
-                            type="hidden" 
-                            name="_gotcha" 
-                            className="bg-transparent"
-                        />
+                        />                        
                     </div>
                     
                     <Button 
@@ -273,20 +257,7 @@ function Contact() {
                         disabled={state.submitting}
                         className={state.submitting ? "opacity-50 cursor-not-allowed" : ""}
                     />
-                </form>
-
-                {/* Badge do reCAPTCHA */}
-                <p className="text-xs text-foreground/80 mt-2">
-                Este site é protegido pelo reCAPTCHA e está sujeito à 
-                <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className="underline mx-1">
-                    Política de Privacidade
-                </a>
-                e
-                <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer" className="underline ml-1">
-                    Termos de Serviço
-                </a>
-                do Google.
-                </p>
+                </form>                
             </div>
         </section>
     );
