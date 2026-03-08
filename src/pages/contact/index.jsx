@@ -1,33 +1,45 @@
 import { useState } from "react";
-import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane } from "react-icons/fa6";
+import { useForm, ValidationError } from '@formspree/react';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane, FaCircleExclamation, FaCircleCheck } from "react-icons/fa6";
 import Social from "@components/common/social";
 import Button from "@components/ui/button";
 import Input from "@components/ui/input";
 import TextArea from "@components/ui/textarea";
 
-function Contact() {
+function Contact() {    
+    const { executeRecaptcha } = useGoogleReCaptcha();
+    
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         phone: "",
         subject: "",
         message: "",
-    })
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission here
-        console.log("Form submitted:", formData);     
-        // Reset form
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-    }
+    }); 
+    
+    const [state, handleSubmit] = useForm("meerogdv", {
+        data: {
+        "g-recaptcha-response": executeRecaptcha
+        }
+    });
 
     const handleChange = (e) => {
+        const { name, value } = e.target;
         setFormData({
             ...formData,
-        [   e.target.name]: e.target.value,
+            [name]: value,
         });
-    }
+    };
+
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        if (!executeRecaptcha) {
+            console.error("reCAPTCHA não carregado");
+            return;
+        }
+        await handleSubmit(e);
+    };
 
     const redesSociais = [
         {
@@ -46,9 +58,30 @@ function Contact() {
             label: "Instagram"
         }
     ];
-    
+
+    if (state.succeeded) {
+        return (
+            <section className="w-full max-w-7xl flex items-center justify-center min-h-[60vh]">
+                <div className="text-center space-y-6 p-8 bg-background rounded-2xl">
+                    <FaCircleCheck className="text-6xl text-foreground mx-auto" />
+                    <h2 className="text-3xl font-bold text-foreground">Mensagem Enviada!</h2>
+                    <p className="text-foreground/80 max-w-md">
+                        Obrigado pelo contato! Sua mensagem foi enviada com sucesso. 
+                        Entrarei em contato o mais breve possível.
+                    </p>
+                    <Button 
+                        onClick={() => window.location.reload()}
+                        text="Enviar nova mensagem"
+                        icon={FaPaperPlane}
+                    />
+                </div>
+            </section>
+        );
+    }
+
     return (
         <section className="w-full max-w-7xl flex flex-col md:flex-row items-stretch justify-center gap-5">
+            {/* Lado esquerdo - Informações de contato */}
             <div className="w-full md:w-1/2 p-3 md:p-0 flex flex-col justify-center items-start gap-4">
                 <h2 className="text-2xl mb-4">Informações de Contato</h2>
                 <div className="space-y-4">
@@ -86,8 +119,13 @@ function Contact() {
                 <div className="py-4 pt-5">
                     <h2 className="text-2xl mb-4">Redes sociais</h2>
                     <div className="flex space-x-4">
-                        {redesSociais.map(item => (
-                            <Social label={ item.label } icon={ item.icon } link={ item.href } />
+                        {redesSociais.map((item, index) => (
+                            <Social 
+                                key={index}
+                                label={item.label} 
+                                icon={item.icon} 
+                                link={item.href} 
+                            />
                         ))}                            
                     </div>
                 </div>
@@ -101,6 +139,7 @@ function Contact() {
                 </div>                
             </div>
 
+            {/* Lado direito - Formulário com Formspree */}
             <div className="w-full md:w-1/2 p-3 md:p-0 flex flex-col justify-start items-start gap-4">
                 <h1 className="w-full text-2xl">
                     Entre em Contato
@@ -110,63 +149,144 @@ function Contact() {
                     Tem um projeto em mente? Vamos conversar! Estou sempre aberto a novas oportunidades e colaborações
                     interessantes.
                 </p> 
-                <form onSubmit={ handleSubmit } className="w-full max-w-3xl space-y-4">
+                
+                {/* Indicador de envio */}
+                {state.submitting && (
+                    <div className="w-full p-4 bg-background border border-button rounded-lg flex items-center gap-3">
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-button"></div>
+                        <span className="text-foreground">Enviando mensagem...</span>
+                    </div>
+                )}
+
+                {/* Mensagem de erro */}
+                {state.errors && (
+                    <div className="w-full p-4 bg-background border border-button rounded-lg flex items-center gap-3">
+                        <FaCircleExclamation className="text-foreground text-xl" />
+                        <div>
+                            <span className="text-foreground font-semibold">Erro ao enviar a mensagem. </span>
+                            <span className="text-foreground">
+                                {state.errors?.form?.map(error => error.message).join(', ')}
+                            </span>
+                        </div>
+                    </div>
+                )}
+                
+                <form onSubmit={onSubmit} className="w-full max-w-3xl space-y-4">
                     <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <Input 
                                 name="name" 
-                                value={ formData.name } 
-                                change={ handleChange } 
-                                required={ true } 
+                                value={formData.name} 
+                                onChange={handleChange}
+                                required={true} 
                                 label="Nome" 
+                                disabled={state.submitting}
+                            />
+                            <ValidationError 
+                                prefix="Nome" 
+                                field="name"
+                                errors={state.errors}
+                                className="text-sm text-red-500 mt-1"
                             />
                         </div>
                         <div className="space-y-2"> 
                             <Input 
                                 name="email" 
-                                value={ formData.email } 
+                                value={formData.email} 
                                 type="email" 
-                                change={ handleChange } 
-                                required={ true } 
-                                label="Email" 
-                            /> 
+                                onChange={handleChange}
+                                required={true} 
+                                label="Email"
+                                disabled={state.submitting} 
+                            />
+                            <ValidationError 
+                                prefix="Email" 
+                                field="email"
+                                errors={state.errors}
+                                className="text-sm text-red-500 mt-1"
+                            />
                         </div>
                     </div>                    
+                    
                     <div className="grid md:grid-cols-2 gap-4">
                         <div className="space-y-2"> 
                             <Input 
                                 name="phone" 
-                                value={ formData.phone } 
-                                type="phone" 
-                                change={ handleChange } 
-                                label="Telefone" 
-                            /> 
+                                value={formData.phone} 
+                                type="tel" 
+                                onChange={handleChange}
+                                label="Telefone"
+                                disabled={state.submitting} 
+                            />
+                            <ValidationError 
+                                prefix="Telefone" 
+                                field="phone"
+                                errors={state.errors}
+                                className="text-sm text-red-500 mt-1"
+                            />
                         </div>
                         <div className="space-y-2">
                             <Input 
                                 name="subject" 
-                                value={ formData.subject } 
-                                change={ handleChange } 
-                                label="Assunto" 
+                                value={formData.subject} 
+                                onChange={handleChange}
+                                label="Assunto"
+                                required={true}
+                                disabled={state.submitting} 
+                            />
+                            <ValidationError 
+                                prefix="Assunto" 
+                                field="subject"
+                                errors={state.errors}
+                                className="text-sm text-red-500 mt-1"
                             />                                                
                         </div>
                     </div>
+                    
                     <div className="space-y-2">
                         <TextArea 
                             name="message" 
                             label="Mensagem" 
                             value={ formData.message } 
-                            change={ handleChange } 
-                            required={ true } 
-                            rows={ 6 } 
+                            onChange={ handleChange } 
+                            required={true} 
+                            rows={ 6 }
+                            disabled={state.submitting}
+                        />
+                        <ValidationError 
+                            prefix="Mensagem" 
+                            field="message"
+                            errors={ state.errors }
+                            className="text-sm text-red-500 mt-1"
+                        />
+                        <input 
+                            type="hidden" 
+                            name="_gotcha" 
+                            className="bg-transparent"
                         />
                     </div>
+                    
                     <Button 
-                        icon={ FaPaperPlane }
+                        icon={FaPaperPlane}
                         type="submit"
-                        text="Enviar formulário"
+                        text={state.submitting ? "Enviando..." : "Enviar formulário"}
+                        disabled={state.submitting}
+                        className={state.submitting ? "opacity-50 cursor-not-allowed" : ""}
                     />
                 </form>
+
+                {/* Badge do reCAPTCHA */}
+                <p className="text-xs text-foreground/80 mt-2">
+                Este site é protegido pelo reCAPTCHA e está sujeito à 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className="underline mx-1">
+                    Política de Privacidade
+                </a>
+                e
+                <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer" className="underline ml-1">
+                    Termos de Serviço
+                </a>
+                do Google.
+                </p>
             </div>
         </section>
     );

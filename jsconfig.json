@@ -7,7 +7,9 @@
         "@/hooks/*": ["./src/hooks/*"],
         "@/pages/*": ["./src/pages/*"],
         "@/assets/*": ["./src/assets/*"],
-        "@/style/*": ["./src/style/*"]
+        "@/routes/*": ["./src/routes/*"],
+        "@/style/*": ["./src/style/*"],
+        "@/utils/*": ["./src/utils/*"]
     }
   }
 }
