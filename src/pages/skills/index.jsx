@@ -98,7 +98,7 @@ function Skills() {
                                         <span className="font-thin">{ skill.icon }</span>
                                         <span className="font-medium">{ skill.name }</span>
                                     </div>
-                                    <div className="w-full bg-(--foreground) rounded-full h-0.5 overflow-hidden">                                        
+                                    <div className="w-full bg-button rounded-full h-0.5 overflow-hidden">                                        
                                     </div>
                                 </div>
                             ))}
@@ -115,7 +115,7 @@ function Skills() {
                     {tools.map((tool, index) => (
                         <span
                             key={index}
-                            className="px-4 py-2 bg-(--foreground) text-(--background) rounded-full text-sm font-medium"
+                            className="px-4 py-2 bg-button text-button-text rounded-full text-sm font-medium"
                         >
                             {tool}
                         </span>
@@ -125,7 +125,7 @@ function Skills() {
 
             <div className="grid md:grid-cols-3 gap-6 py-3">
                 <div className="text-center">
-                    <div className="border-2 border-(--foreground) rounded-2xl p-6 shadow">
+                    <div className="border-2 border-button rounded-2xl p-6 shadow">
                         <FaGlobe className="h-12 w-12 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Desenvolvimento Web</h3>
                         <p className="text-sm">Aplicações web modernas e responsivas</p>
@@ -133,7 +133,7 @@ function Skills() {
                 </div>
 
                 <div className="text-center">
-                    <div className="border-2 border-(--foreground) rounded-2xl p-6 shadow">
+                    <div className="border-2 border-button rounded-2xl p-6 shadow">
                         <FaMobileScreen className="h-12 w-12 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Mobile First</h3>
                         <p className="text-sm">Design responsivo e otimizado para mobile</p>
@@ -141,7 +141,7 @@ function Skills() {
                 </div>
 
                 <div className="text-center">
-                    <div className="border-2 border-(--foreground) rounded-2xl p-6 shadow">
+                    <div className="border-2 border-button rounded-2xl p-6 shadow">
                         <FaCloud className="h-12 w-12 mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Cloud Solutions</h3>
                         <p className="text-sm">Arquiteturas escaláveis na nuvem</p>
