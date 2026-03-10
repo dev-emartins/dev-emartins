@@ -64,14 +64,13 @@ function Home(){
                     <ButtonLink icon={ FaRegCircleQuestion } text="Saiba mais" link="/about" />
                 </div>
             </div>
-            <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
-                <figure className="w-11/12 md:w-2/3 block overflow-hidden border-b border-button/60 rounded-lg">
-                    <Image 
-                        className="w-full p-0 drop-shadow-xl drop-shadow-button/20" 
-                        src={ user } 
-                        alt="Image DEM" 
-                    />
-                </figure>
+            <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">                
+                <Image 
+                    className="w-full p-0 drop-shadow-xl drop-shadow-button/20" 
+                    classNameFigure="w-11/12 md:w-2/3 block overflow-hidden border-b border-button/60 rounded-lg"
+                    src={ user } 
+                    alt="Image DEM" 
+                />
             </div>
         </section>
     );

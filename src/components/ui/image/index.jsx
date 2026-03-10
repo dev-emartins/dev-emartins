@@ -5,7 +5,8 @@ import Placeholder from "@components/ui/placeholder";
 function Image({ 
   src, 
   alt, 
-  className = "", 
+  className = "",
+  classNameFigure = "",
   width, 
   height,
   lazy = true,
@@ -32,7 +33,7 @@ function Image({
 
   return (
     <div 
-      className={`image-container ${isLoading ? 'loading' : ''} ${hasError ? 'error' : ''}`}
+      className={`flex justify-center items-center image-container ${isLoading ? 'loading' : ''} ${hasError ? 'error' : ''}`}
       style={{ 
         position: 'relative',
         width: width ? `${width}px` : '100%',
@@ -43,25 +44,26 @@ function Image({
       {isLoading && (
         <div className="image-skeleton absolute inset-0 bg-background animate-pulse rounded" />
       )}
-
-      <img
-        src={imageSrc}
-        alt={alt}
-        className={`${className} text-foreground ${isLoading ? 'opacity-0' : 'opacity-100'}`}
-        width={width}
-        height={height}
-        loading={lazy ? "lazy" : "eager"}
-        onError={handleError}
-        onLoad={handleLoad}
-        onClick={onClick}
-        style={{
-          objectFit: objectFit,
-          transition: 'opacity 0.3s ease-in-out',
-          width: '100%',
-          height: '100%',
-        }}
-        {...rest}
-      />
+      <figure className={classNameFigure}>
+        <img
+          src={imageSrc}
+          alt={alt}
+          className={`${className} text-foreground ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+          width={width}
+          height={height}
+          loading={lazy ? "lazy" : "eager"}
+          onError={handleError}
+          onLoad={handleLoad}
+          onClick={onClick}
+          style={{
+            objectFit: objectFit,
+            transition: 'opacity 0.3s ease-in-out',
+            width: '100%',
+            height: '100%',
+          }}
+          {...rest}
+        />
+      </figure>      
     </div>
   );
 }

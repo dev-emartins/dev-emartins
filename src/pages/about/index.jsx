@@ -6,14 +6,13 @@ import about_user from "@assets/about_user.png";
 function About(){
     return (
         <section className="w-full max-w-7xl flex flex-col md:flex-row items-start justify-center gap-3">
-            <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
-                <figure className="w-11/12 md:w-1/2 bg-button/10 border-y border-button/60 rounded-lg">
+            <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">                
                     <Image 
                         className="rounded-2xl" 
+                        classNameFigure="w-11/12 md:w-1/2 bg-button/10 border-y border-button/60 rounded-lg"
                         src={ about_user } 
                         alt="Image DEM" 
                     />
-                </figure>
             </div>
             <div className="w-full md:w-1/2 p-3 md:p-0 flex flex-col justify-start items-start gap-3">
                 <h2 className="text-2xl md:text-3xl font-black font-sans">Sobre mim</h2>
