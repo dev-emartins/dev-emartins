@@ -1,5 +1,6 @@
 import { FaDownload } from "react-icons/fa6";
 import Download from "@components/ui/download";
+import Image from "@/components/ui/image";
 import about_user from "@assets/about_user.png";
 
 function About(){
@@ -7,7 +8,11 @@ function About(){
         <section className="w-full max-w-7xl flex flex-col md:flex-row items-start justify-center gap-3">
             <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">
                 <figure className="w-11/12 md:w-1/2 bg-button/10 border-y border-button/60 rounded-lg">
-                    <img className="rounded-2xl" src={ about_user } alt="Image DEM" />
+                    <Image 
+                        className="rounded-2xl" 
+                        src={ about_user } 
+                        alt="Image DEM" 
+                    />
                 </figure>
             </div>
             <div className="w-full md:w-1/2 p-3 md:p-0 flex flex-col justify-start items-start gap-3">
