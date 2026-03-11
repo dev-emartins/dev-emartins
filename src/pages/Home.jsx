@@ -35,7 +35,7 @@ function Home(){
     ];
     return (
         <section className="w-full max-w-7xl flex flex-col-reverse md:flex-row items-center justify-center gap-3">
-            <div className="w-full md:w-1/2 pt-3 md:pt-0">
+            <div className="w-full md:w-3/5 pt-3 md:pt-0">
                 <h4 className="text-base md:text-xl font-semibold font-sans px-3 py-1">
                     Olá! Bem-vindo(a), meu nome é
                 </h4>
@@ -62,10 +62,10 @@ function Home(){
                     <ButtonLink icon={ FaRegCircleQuestion } text="Saiba mais" link="/about" />
                 </div>
             </div>
-            <div className="w-full md:w-1/2 pt-3 md:pt-0 flex justify-center items-center">                
+            <div className="w-full md:w-2/5 pt-3 md:pt-0 flex justify-center items-center">                
                 <Image 
                     className="w-full p-0 drop-shadow-xl drop-shadow-button/20" 
-                    classNameFigure="w-11/12 md:w-2/3 block overflow-hidden border-b border-button/60 rounded-lg"
+                    classNameFigure="w-11/12 block overflow-hidden border-b border-button/60 rounded-lg"
                     src={ user } 
                     alt="Image DEM" 
                 />
