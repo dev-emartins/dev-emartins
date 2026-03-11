@@ -73,7 +73,7 @@ function TextArea({
   );
 }
 
-TextArea.propTypes = {
+TextArea.prototype = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,

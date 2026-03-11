@@ -1,7 +1,7 @@
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa6";
 import figure from "@assets/figure.png";
-import ButtonLink from "@components/ui/buttonlink";
+import { ButtonLink } from "@components/ui";
 
 function ErrorPage(){
     const error = useRouteError();

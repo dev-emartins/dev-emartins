@@ -1,11 +1,6 @@
 import { useRef, useState } from "react";
-import { 
-  DesktopMenu, 
-  MobileMenu, 
-  MenuToggle, 
-  ThemeToggle 
-} from "@components/navigation";
-import Logo from "@components/common/logo";
+import { DesktopMenu, MobileMenu, MenuToggle, ThemeToggle } from "@components/navigation";
+import { Logo } from "@components/common";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,14 +24,14 @@ function Header() {
           
           <div className="flex items-center gap-5">
             <ThemeToggle />
-            <MenuToggle isOpen={isMenuOpen} onClick={toggleMenu} />
+            <MenuToggle isOpen={ isMenuOpen } onClick={toggleMenu} />
           </div>
         </div>
         
         <MobileMenu 
-          ref={menuRef}
-          isOpen={isMenuOpen}
-          onClose={closeMenu}
+          ref={ menuRef }
+          isOpen={ isMenuOpen }
+          onClose={ closeMenu }
         />
       </nav>
     </header>

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
-function Typewriter({ 
+function TypeWriter({ 
   texts = [], 
   typingSpeed = 300,
   erasingSpeed = 150,
@@ -54,7 +54,7 @@ function Typewriter({
   );
 }
 
-Typewriter.propTypes = {
+TypeWriter.prototype = {
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
   typingSpeed: PropTypes.number,
   erasingSpeed: PropTypes.number,
@@ -64,4 +64,4 @@ Typewriter.propTypes = {
   loop: PropTypes.bool
 };
 
-export default Typewriter;
+export default TypeWriter;

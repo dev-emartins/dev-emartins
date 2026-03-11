@@ -1,4 +1,11 @@
-function Download({to, label, Icon, download = "download"}){
+import PropTypes from "prop-types";
+
+function Download({
+    icon: Icon,
+    to, 
+    label,      
+    download = "download"
+}){
     return (
         <div className="w-full py-5 flex justify-center md:justify-start items-center">
             <a 
@@ -15,5 +22,13 @@ function Download({to, label, Icon, download = "download"}){
         </div>
     );
 }
+
+Download.prototype = {
+    icon: PropTypes.elementType,    
+    to: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    download: PropTypes.string.isRequired,
+    className: PropTypes.string,
+};
 
 export default Download;

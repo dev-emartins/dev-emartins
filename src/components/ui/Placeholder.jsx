@@ -1,4 +1,9 @@
-function Placeholder(width = 512, height = 512){
+import PropTypes from "prop-types";
+
+function Placeholder({ 
+    width = 512, 
+    height = 512 
+}) {
     return (
         <svg
         version="1.0"
@@ -27,5 +32,10 @@ function Placeholder(width = 512, height = 512){
         </svg>
     )
 }
+
+Placeholder.prototype = {
+    width: PropTypes.string.isRequired,
+    height: PropTypes.string.isRequired
+};
 
 export default Placeholder;

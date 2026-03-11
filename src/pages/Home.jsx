@@ -1,8 +1,6 @@
 import { FaRegCircleQuestion , FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa6";
-import Typewriter from "@components/ui/typewriter";
-import ButtonLink from "@components/ui/buttonlink";
-import Social from "@components/common/social";
-import Image from "@/components/ui/image";
+import { TypeWriter, ButtonLink, Image } from "@components/ui";
+import { Social } from "@components/common";
 import user from "@assets/user.png";
 
 function Home(){    
@@ -45,7 +43,7 @@ function Home(){
                     Everaldo Martins
                 </h2>
                 <h4 className="w-full md:w-xl flex justify-start items-center p-4">
-                    <Typewriter 
+                    <TypeWriter 
                         texts={ aboutMe }
                         prefix="root@dem:/#"
                         cursor="█"

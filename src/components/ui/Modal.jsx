@@ -2,7 +2,13 @@ import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { FaCircleXmark } from "react-icons/fa6";
 
-function Modal({ isOpen, onClose, title, children, size = "md" }) {
+function Modal({ 
+  isOpen, 
+  onClose, 
+  title, 
+  children, 
+  size = "md" 
+}) {
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -72,7 +78,7 @@ function Modal({ isOpen, onClose, title, children, size = "md" }) {
   );
 };
 
-Modal.propTypes = {
+Modal.prototype = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,

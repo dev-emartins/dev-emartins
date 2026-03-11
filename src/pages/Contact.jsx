@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaEnvelope, FaGithub, FaPhone, FaInstagram, FaLinkedin, FaMapLocation, FaPaperPlane, FaCircleExclamation, FaCircleCheck } from "react-icons/fa6";
-import Social from "@components/common/social";
-import Button from "@components/ui/button";
-import Input from "@components/ui/input";
-import TextArea from "@components/ui/textarea";
-import Modal from "@components/ui/modal";
+import { Social } from "@components/common";
+import { Button, Input, TextArea, Modal } from "@components/ui";
 
 function Contact() {        
     const [formData, setFormData] = useState({

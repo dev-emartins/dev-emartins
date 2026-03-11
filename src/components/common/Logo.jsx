@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Logo() {
+export function Logo() {
     return (
         <Link to="/">
             <svg 
@@ -15,5 +15,3 @@ function Logo() {
         </Link>                
     );
 }
-
-export default Logo;

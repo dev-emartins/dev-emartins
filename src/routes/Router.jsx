@@ -1,12 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "@pages";
-import Home from "@pages/home";
-import About from "@pages/about";
-import Skills from "@pages/skills";
-import Contact from "@pages/contact";
-import ErrorPage from "@pages/error";
+import { About, App, Contact, ErrorPage, Home, Skills } from "@pages";
 
-export const router = createBrowserRouter([
+export const Router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
