@@ -9,7 +9,7 @@ function DesktopMenu({ className = '' }) {
         <NavLink
           key={item.name}
           to={item.path}
-          className="py-2 px-4 rounded-xl transition-colors text-base hover:bg-button/10 cursor-pointer"
+          className="py-2 px-4 rounded-full transition-colors text-base hover:bg-button/10 cursor-pointer"
         >
           {item.name}
         </NavLink>

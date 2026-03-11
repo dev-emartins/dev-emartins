@@ -11,7 +11,7 @@ const MobileMenu = forwardRef(({ isOpen, onClose, className = '' }, ref) => {
     <div 
       ref={ref} 
       className={`
-        bg-background md:hidden fixed inset-0 top-18 z-50 
+        bg-background/60 backdrop-blur-xl md:hidden fixed inset-0 top-18 z-50 
         shadow-lg animate-fade-in ${className}
       `}
     >
@@ -20,7 +20,7 @@ const MobileMenu = forwardRef(({ isOpen, onClose, className = '' }, ref) => {
           <NavLink
             key={item.name}
             to={item.path}
-            className="w-full p-2 rounded-xl transition-colors text-xl text-center bg-button/8 cursor-pointer"
+            className="w-full p-2 rounded-full transition-colors text-xl text-center bg-button/10 cursor-pointer"
             onClick={onClose}
           >
             {item.name}
