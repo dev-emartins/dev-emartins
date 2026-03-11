@@ -7,11 +7,11 @@ function DesktopMenu({ className = '' }) {
     <div className={`hidden md:flex items-center ${className}`}>
       {menuItems.map(item => (
         <NavLink
-          key={item.name}
-          to={item.path}
+          key={ item.id }
+          to={ item.to }
           className="py-2 px-4 rounded-full transition-colors text-base hover:bg-button/10 cursor-pointer"
         >
-          {item.name}
+          { item.label }
         </NavLink>
       ))}
     </div>

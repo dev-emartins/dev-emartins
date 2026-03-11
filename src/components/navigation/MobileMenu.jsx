@@ -18,12 +18,12 @@ const MobileMenu = forwardRef(({ isOpen, onClose, className = '' }, ref) => {
       <div className="h-full flex flex-col justify-center items-center gap-4 p-5">
         {menuItems.map(item => (
           <NavLink
-            key={item.name}
-            to={item.path}
+            key={ item.id }
+            to={ item.to }
             className="w-full p-2 rounded-full transition-colors text-xl text-center bg-button/10 cursor-pointer"
             onClick={onClose}
           >
-            {item.name}
+            { item.label }
           </NavLink>
         ))}
       </div>

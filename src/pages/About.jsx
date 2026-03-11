@@ -29,10 +29,9 @@ function About(){
                     intuitivas e experiências de usuário excepcionais.
                 </p>
                 <Download 
+                    icon={ FaDownload }
                     to="/curriculo.pdf" 
-                    label="Download CV" 
-                    download="Currículo_Everaldo_Martins.pdf"
-                    Icon={ FaDownload } 
+                    label="Download CV"                     
                 />
             </div>
         </section>
