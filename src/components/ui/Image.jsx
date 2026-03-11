@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import Placeholder from "@components/ui/placeholder";
+import Placeholder from "./Placeholder";
 
 function Image({ 
   src, 
