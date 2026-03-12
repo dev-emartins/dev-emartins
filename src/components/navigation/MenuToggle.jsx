@@ -1,4 +1,4 @@
-import { FaBars, FaCircleXmark } from "react-icons/fa6";
+import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 import PropTypes from "prop-types";
 
 function MenuToggle({ isOpen, onClick, className = '' }) {
@@ -8,10 +8,10 @@ function MenuToggle({ isOpen, onClick, className = '' }) {
         md:hidden text-2xl rounded-full transition-colors 
         hover:bg-button/10 cursor-pointer ${className}
       `}
-      onClick={onClick}
-      aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
+      onClick={ onClick }
+      aria-label={ isOpen ? 'Fechar menu' : 'Abrir menu' }
     >
-      {isOpen ? <FaCircleXmark /> : <FaBars />}
+      { isOpen ? <FaBars /> : <FaBarsStaggered /> }
     </button>
   );
 }
