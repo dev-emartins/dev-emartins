@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import Placeholder from "./Placeholder";
+import placeholder from "@assets/placeholder.webp";
 
 function Image({ 
   src, 
@@ -10,7 +10,7 @@ function Image({
   width, 
   height,
   lazy = true,
-  fallbackSrc = <Placeholder />,
+  fallbackSrc = placeholder,
   objectFit = "cover",
   onClick,
   ...rest 
@@ -46,15 +46,15 @@ function Image({
       )}
       <figure className={classNameFigure}>
         <img
-          src={imageSrc}
-          alt={alt}
-          className={`${className} text-foreground ${isLoading ? 'opacity-0' : 'opacity-100'}`}
-          width={width}
-          height={height}
-          loading={lazy ? "lazy" : "eager"}
-          onError={handleError}
-          onLoad={handleLoad}
-          onClick={onClick}
+          src={ imageSrc }
+          alt={ alt }
+          className={`${ className } text-foreground ${ isLoading ? 'opacity-0' : 'opacity-100' }`}
+          width={ width }
+          height={ height }
+          loading={ lazy ? "lazy" : "eager" }
+          onError={ handleError }
+          onLoad={ handleLoad }
+          onClick={ onClick }
           style={{
             objectFit: objectFit,
             transition: 'opacity 0.3s ease-in-out',

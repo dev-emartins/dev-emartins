@@ -1,7 +1,7 @@
 import { FaRegCircleQuestion , FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa6";
 import { TypeWriter, ButtonLink, Image } from "@components/ui";
 import { Social } from "@components/common";
-import user from "@assets/user.png";
+import user from "@assets/user.webp";
 
 function Home(){    
     const redesSociais = [

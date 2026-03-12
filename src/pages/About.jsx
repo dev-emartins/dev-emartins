@@ -1,6 +1,6 @@
 import { FaDownload } from "react-icons/fa6";
 import { Download, Image } from "@components/ui";
-import about_user from "@assets/about_user.png";
+import about_user from "@assets/about_user.webp";
 
 function About(){
     return (
