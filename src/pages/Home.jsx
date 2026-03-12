@@ -34,8 +34,8 @@ function Home(){
         "Engenheiro de Softwares"
     ];
     return (
-        <section className="w-full max-w-7xl flex flex-col-reverse md:flex-row items-center justify-center gap-3">
-            <div className="w-full md:w-3/5 pt-3 md:pt-0">
+        <section className="w-full max-w-7xl flex flex-col-reverse lg:flex-row items-center justify-center gap-3">
+            <div className="w-full lg:w-3/5 pt-3">
                 <h4 className="text-base md:text-xl font-semibold font-sans px-3 py-1">
                     Olá! Bem-vindo(a), meu nome é
                 </h4>
@@ -53,21 +53,21 @@ function Home(){
                         cursorClassName="text-xl"
                     />
                 </h4>
-                <div className="w-full p-4 flex justify-center md:justify-start gap-4">
+                <div className="w-full p-4 flex justify-center lg:justify-start gap-4">
                     {redesSociais.map(item => (
                         <Social label={ item.label } icon={ item.icon } link={ item.href } />
                     ))}                          
                 </div>
-                <div className="w-full p-4 flex justify-center md:justify-start items-center">
+                <div className="w-full p-4 flex justify-center lg:justify-start items-center">
                     <ButtonLink icon={ FaRegCircleQuestion } text="Saiba mais" link="/about" />
                 </div>
             </div>
-            <div className="w-full md:w-2/5 pt-3 md:pt-0 flex justify-center items-center">                
+            <div className="w-full lg:w-2/5 pt-3 flex justify-center items-center">                
                 <Image 
                     className="w-full p-0 drop-shadow-xl drop-shadow-button/20" 
-                    classNameFigure="w-11/12 block overflow-hidden border-b border-button/60 rounded-lg"
+                    classNameFigure="w-11/12 max-w-3/4 block overflow-hidden border-b border-button/60 rounded-lg"
                     src={ user } 
-                    alt="Image DEM" 
+                    alt="DEM Desenvolvedor Everaldo Martins" 
                 />
             </div>
         </section>

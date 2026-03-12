@@ -66,10 +66,10 @@ function Contact() {
 
     return (
         <>
-            <section className="w-full max-w-7xl flex flex-col md:flex-row items-stretch justify-center gap-5">
+            <section className="w-full max-w-7xl flex flex-col lg:flex-row items-stretch justify-center gap-5">
                 
                 {/* Lado esquerdo - Informações de contato */}
-                <div className="w-full md:w-1/2 p-3 flex flex-col justify-center items-start gap-4">
+                <div className="w-full lg:w-1/2 p-3 flex flex-col justify-center items-start gap-4">
                     <h2 className="text-2xl mb-4">Informações de Contato</h2>
                     <div className="space-y-4">
                         <div className="flex items-center space-x-3">
@@ -127,7 +127,7 @@ function Contact() {
                 </div>
 
                 {/* Lado direito - Formulário com Formspree */}
-                <div className="w-full md:w-1/2 p-3 flex flex-col justify-start items-start gap-4">
+                <div className="w-full lg:w-1/2 p-3 flex flex-col justify-start items-start gap-4">
                     <h1 className="w-full text-2xl">
                         Entre em Contato
                     </h1>

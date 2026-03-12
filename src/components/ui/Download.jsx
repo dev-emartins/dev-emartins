@@ -7,7 +7,7 @@ function Download({
     download = "download"
 }){
     return (
-        <div className="w-full py-5 flex justify-center md:justify-start items-center">
+        <div className="w-full py-5 flex justify-center lg:justify-start items-center">
             <a 
             href= { to }
             target="_blank" 
