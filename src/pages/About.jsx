@@ -30,7 +30,7 @@ function About(){
                 </p>
                 <Download 
                     icon={ FaDownload }
-                    to="/curriculo.pdf" 
+                    to="/files/curriculo.pdf" 
                     label="Download CV"                     
                 />
             </div>

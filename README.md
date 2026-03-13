@@ -2,11 +2,11 @@
 
 ### About me
 
-> 🧑🏾 _My name is **Everaldo Martins**_
+> 🧑🏾 My name is **Everaldo Martins**
 
-> 👨🏽‍🎓 *I am a **Computer Technician** — **IFPB - Federal Institute of Paraíba**.*
+> 👨🏽‍🎓 *I am a **Computer Technician** — **IFPB**.*
 
-> 👨🏽‍💻 *Currently studying **Computer Science** at **UEPB - State University of Paraíba**.*
+> 👨🏽‍💻 *Currently studying **Computer Science** at **UEPB**.*
 
 > 👨🏽‍💼 *Passionate about software development, I enjoy learning new technologies, exploring effective approaches, and building solutions that add real value. I have experience with Java, Spring Boot, REST APIs, PostgreSQL, MySQL and basic MongoDB, along with complementary knowledge in React. I’m also familiar with tools and platforms such as Docker, Kubernetes, Kafka, AWS, and observability solutions like Grafana, Prometheus and Splunk. I’m focused on continuous improvement to deliver clean, reliable, and high-quality backend solutions.*
 

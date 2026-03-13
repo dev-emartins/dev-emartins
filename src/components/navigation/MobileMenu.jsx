@@ -17,7 +17,7 @@ function MobileMenu ({ isOpen, onClose, className = '' }, ref){
     <div 
       ref={ ref } 
       className={`
-        bg-background/40 backdrop-blur-lg md:hidden fixed inset-0 top-18 z-50 
+        bg-background/60 backdrop-blur-lg md:hidden fixed inset-0 top-18 z-50 
         shadow-lg animate-fade-in ${ className }
       `}
     >
@@ -26,7 +26,7 @@ function MobileMenu ({ isOpen, onClose, className = '' }, ref){
           <NavLink
             key={ item.id }
             to={ item.to }
-            className="w-full p-2 rounded-full transition-colors text-xl text-center bg-button/10 cursor-pointer"
+            className="w-full py-2 px-3 rounded-full transition-colors text-xl font-medium text-center bg-button/10 hover:bg-button/20 cursor-pointer"
             onClick={ onClose }
           >
             { item.label }
