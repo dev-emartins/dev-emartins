@@ -61,6 +61,9 @@ function Skills() {
         "JaCoCo",
         "SonarQube",
         "Jira",
+        "MongoDB",
+        "MySQL",
+        "OracleDB",
         "Confluence",            
         "Linux"
     ];
