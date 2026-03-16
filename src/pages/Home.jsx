@@ -7,21 +7,25 @@ function Home(){
     const redesSociais = [
         {
             icon: FaEnvelope,
+            id: "email-link",
             href: "mailto:dev.everaldomartins@gmail.com",
             label: "E-mail"
         },
         {
             icon: FaGithub,
+            id: "github-link",
             href: "https://github.com/dev-emartins",
             label: "GitHub"
         },
         {
             icon: FaLinkedin,
+            id: "linkedin-link",
             href: "https://www.linkedin.com/in/everaldomartins",
             label: "LinkedIn"
         },
         {
             icon: FaInstagram,
+            id: "instagram-link",
             href: "https://www.instagram.com/dev_emartins",
             label: "Instagram"
         }
@@ -55,7 +59,7 @@ function Home(){
                 </h4>
                 <div className="w-full p-4 flex justify-center lg:justify-start gap-4">
                     {redesSociais.map(item => (
-                        <Social label={ item.label } icon={ item.icon } link={ item.href } />
+                        <Social id={ item.id } label={ item.label } icon={ item.icon } link={ item.href } />
                     ))}                          
                 </div>
                 <div className="w-full p-4 flex justify-center lg:justify-start items-center">

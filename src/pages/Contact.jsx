@@ -49,16 +49,19 @@ function Contact() {
     const redesSociais = [
         {
             icon: FaGithub,
+            id: "github-link",
             href: "https://github.com/dev-emartins",
             label: "GitHub"
         },
         {
             icon: FaLinkedin,
+            id: "linkedin-link",
             href: "https://www.linkedin.com/in/everaldomartins",
             label: "LinkedIn"
         },
         {
             icon: FaInstagram,
+            id: "instagram-link",
             href: "https://www.instagram.com/dev_emartins",
             label: "Instagram"
         }
@@ -109,6 +112,7 @@ function Contact() {
                             {redesSociais.map((item, index) => (
                                 <Social 
                                     key={index}
+                                    id={item.id}
                                     label={item.label} 
                                     icon={item.icon} 
                                     link={item.href} 

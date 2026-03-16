@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { App, About, Contact, ErrorPage, Home, Skills } from "@pages";
+import { App, About, Contact, ErrorPage, Error404, Home, Skills } from "@pages";
 
 export const Router = createBrowserRouter([
   {
@@ -25,4 +25,8 @@ export const Router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <Error404 />
+  }
 ]);
