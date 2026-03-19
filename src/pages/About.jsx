@@ -8,7 +8,7 @@ function About(){
             <div className="w-full lg:w-1/3 pt-3 flex justify-center items-center">                
                     <Image 
                         className="rounded-2xl" 
-                        classNameFigure="w-11/12 max-w-3/4 bg-button/10 border-y border-button/60 rounded-lg"
+                        classNameFigure="w-11/12 max-w-[80%] bg-button/10 border-y border-button/60 rounded-lg"
                         src={ about_user } 
                         alt="Image DEM" 
                     />

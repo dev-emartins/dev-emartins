@@ -69,7 +69,7 @@ function Home(){
             <div className="w-full lg:w-2/5 pt-3 flex justify-center items-center">                
                 <Image 
                     className="w-full p-0 drop-shadow-xl drop-shadow-button/20" 
-                    classNameFigure="w-11/12 max-w-3/4 block overflow-hidden border-b border-button/60 rounded-lg"
+                    classNameFigure="w-11/12 max-w-[80%] block overflow-hidden border-b border-button/60 rounded-lg"
                     src={ user } 
                     alt="DEM Desenvolvedor Everaldo Martins" 
                 />
