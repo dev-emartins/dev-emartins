@@ -8,7 +8,7 @@
 
 > 👨🏽‍💻 *Currently studying **Computer Science** at **UEPB**.*
 
-> 👨🏽‍💼 *Passionate about software development, I enjoy learning new technologies, exploring effective approaches, and building solutions that add real value. I have experience with Java, Spring Boot, REST APIs, PostgreSQL, MySQL and basic MongoDB, along with complementary knowledge in React. I’m also familiar with tools and platforms such as Docker, Kubernetes, Kafka, AWS, and observability solutions like Grafana, Prometheus and Splunk. I’m focused on continuous improvement to deliver clean, reliable, and high-quality backend solutions.*
+> 👨🏽‍💼 Desenvolvedor Backend com foco em **Java** e **Node.js**, especializado na construção de **APIs RESTful** e microsserviços escaláveis. Experiência em **PostgreSQL/MySQL**, testes automatizados com **JUnit5**, e práticas de qualidade de código. Conhecimento em **Docker** e **AWS** para conteinerização e deploy, além de diferencial em **Frontend** com **React.js (Vite)**.
 
 
 ### Contact me
@@ -47,7 +47,10 @@
     <tr>
         <td width=60>
             <img alt="Java" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Java.svg">
-        </td>        
+        </td> 
+        <td width=60>
+            <img alt="Node.js" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/NodeJS.svg">
+        </td>
         <td width=60>
             <img alt="React" src="https://github.com/gui-bus/TechIcons/blob/main/Dark/React.svg">
         </td>
