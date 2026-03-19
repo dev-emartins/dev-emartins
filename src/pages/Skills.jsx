@@ -1,149 +1,130 @@
-import { FaCloud, FaCode, FaGlobe, FaMobileScreen, FaTerminal, FaFilePen, FaChartArea, FaServer, FaLaptopCode, FaMicrochip} from "react-icons/fa6";
+import { ButtonLink, Card, GraphicCard } from "@/components/ui";
+import { 
+  FaCloud, FaGlobe, FaMobileScreen, 
+  FaChartArea, FaServer, FaLaptopCode
+} from "react-icons/fa6";
 
 function Skills() {
-    const skillCategories = [
+  const skillCategories = [
+    {
+      title: "Frontend",
+      icon: FaLaptopCode,
+      items: [
+        { name: "React (Vite)", level: 90 },
+        { name: "HTML", level: 95 },
+        { name: "CSS", level: 88 },
+        { name: "Tailwind CSS", level: 92 },
+      ],
+    },
+    {
+      title: "Backend",
+      icon: FaServer,
+      items: [
+        { name: "Java", level: 85 },
+        { name: "Spring Boot", level: 82 },
+        { name: "Node.js", level: 78 },
+        { name: "PostgreSQL", level: 80 },
+      ],
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: FaCloud,
+      items: [
+        { name: "AWS", level: 75 },
+        { name: "Docker", level: 82 },
+        { name: "Kubernetes", level: 68 },
+        { name: "CI/CD", level: 80 },
+      ],
+    },
+    {
+      title: "Monitoramento & Logging",
+      icon: FaChartArea,
+      items: [
+        { name: "Prometheus", level: 75 },
+        { name: "Grafana", level: 82 },
+        { name: "Splunk", level: 70 },
+        { name: "Logstash", level: 72 },
+      ],
+    },
+  ];
+
+  const tools = [
+    "VS Code", "IntelliJ", "Git", "GitHub", "GitFlow",
+    "Docker Compose", "Vercel", "Maven", "Gradle", "Swagger UI",
+    "Jenkins", "JUnit5", "Mockito", "JaCoCo", "SonarQube",
+    "Jira", "MongoDB", "MySQL", "OracleDB", "Confluence", "Linux"
+  ];
+
+  const cards = [
         {
-            title: "Frontend",
-            icon: <FaLaptopCode className="text-3xl" />,
-            skills: [
-                { name: "React(Vite)", icon: <FaCode /> },
-                { name: "HTML", icon: <FaCode /> },
-                { name: "CSS", icon: <FaCode /> },
-                { name: "Tailwind CSS", icon: <FaCode /> }
-            ],
+        icon: FaGlobe,
+        title: "Desenvolvimento Web",
+        desc: "Aplicações modernas, performáticas e com excelente experiência do usuário"
         },
         {
-            title: "Backend",
-            icon: <FaServer className="text-3xl" />,
-            skills: [
-                { name: "Java", icon: <FaMicrochip /> },
-                { name: "Spring Boot", icon: <FaMicrochip /> },
-                { name: "NodeJS", icon: <FaMicrochip /> },
-                { name: "PostgreSQL", icon: <FaMicrochip /> }
-            ],
+        icon: FaMobileScreen,
+        title: "Mobile First",
+        desc: "Design responsivo, fluido e otimizado para todos os dispositivos"
         },
         {
-            title: "Cloud & DevOps",
-            icon: <FaCloud className="text-3xl" />,
-            skills: [
-                { name: "AWS", icon: <FaTerminal /> },
-                { name: "Docker", icon: <FaTerminal /> },
-                { name: "Kubernetes", icon: <FaTerminal /> },
-                { name: "CI/CD", icon: <FaTerminal /> }
-            ],
-        },
-        {
-            title: "Monitoramento & Logging",
-            icon: <FaChartArea className="text-3xl" />,
-            skills: [                
-                { name: "Prometheus", icon: <FaFilePen /> },
-                { name: "Grafana", icon: <FaFilePen /> },
-                { name: "Splunk", icon: <FaFilePen /> },
-                { name: "Logstash", icon: <FaFilePen /> }
-            ],
+        icon: FaCloud,
+        title: "Cloud & Escalabilidade",
+        desc: "Arquiteturas cloud-native, seguras e preparadas para crescer"
         },
     ];
 
-    const tools = [
-        "VS Code",
-        "IntelliJ",        
-        "Git",
-        "GitHub",
-        "GitFlow",          
-        "Docker Compose",
-        "Vercel",
-        "Maven",
-        "Gradle",
-        "Swagger UI",    
-        "Jenkins",
-        "JUnit5",
-        "Mockito",
-        "JaCoCo",
-        "SonarQube",
-        "Jira",
-        "MongoDB",
-        "MySQL",
-        "OracleDB",
-        "Confluence",            
-        "Linux"
-    ];
+  return (
+    <section className="w-full max-w-7xl mx-auto px-5 sm:px-8 py-12 md:py-16">
+      {/* Cabeçalho */}
+      <div className="text-center mb-12 md:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+          Minhas Habilidades
+        </h2>
+        <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          Com dedicação e experiência acumulada, domino tecnologias modernas que me permitem entregar soluções completas, 
+          escaláveis e alinhadas com as reais necessidades de negócio.
+        </p>
+      </div>
 
-    return (
-        <section className="w-full max-w-7xl px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center py-3">
-                Minhas Habilidades
-            </h2>
+      {/* Grid de categorias principais */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        {skillCategories.map((category) => (
+          <GraphicCard
+            key={category.title}
+            icon={category.icon}
+            title={category.title}
+            items={category.items}
+          />
+        ))}
+      </div>
 
-            <p className="text-sm text-center py-3">
-                Com muito empenho e dedicação ao longo da minha trajetória, desenvolvi expertise em diversas tecnologias e ferramentas, o que hoje me permite criar soluções completas, eficientes e alinhadas com as reais necessidades dos projetos.
-            </p>
+      {/* Ferramentas */}
+      <div className="mt-16 md:mt-20">
+        <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8">
+          Ferramentas & Tecnologias
+        </h3>
 
-            <div className="grid md:grid-cols-2 gap-8 py-4">
-                {skillCategories.map((category, index) => (
-                    <div key={ index } className="space-y-4">
-                        <h2 className="flex items-center text-2xl py-3 font-semibold">
-                            <span className="mr-3">{category.icon}</span>
-                            { category.title }
-                        </h2>
-                        <div className="space-y-4">
-                            {category.skills.map((skill, iskill) => (
-                                <div key={ iskill } className="space-y-2">
-                                    <div className="flex justify-between items-center">
-                                        <span className="font-thin">{ skill.icon }</span>
-                                        <span className="font-medium">{ skill.name }</span>
-                                    </div>
-                                    <div className="w-full bg-button rounded-full h-0.5 overflow-hidden">                                        
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div>
+        <div className="flex flex-wrap gap-2.5 sm:gap-3 justify-center">
+          {tools.map((tool) => (
+            <ButtonLink text={ tool } className="w-fit" />            
+          ))}
+        </div>
+      </div>         
 
-            <div className="py-6">
-                <h2 className="text-2xl font-semibold text-center mb-6">
-                    Ferramentas & Tecnologias
-                </h2>
-                <div className="flex flex-wrap gap-3 justify-center">
-                    {tools.map((tool, index) => (
-                        <span
-                            key={index}
-                            className="px-4 py-2 bg-button text-button-text rounded-full text-sm font-medium"
-                        >
-                            {tool}
-                        </span>
-                    ))}
-                </div>
-            </div>
+      {/* Cards de destaque */}
+      <div className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        {cards.map((item, i) => (
+          <Card
+            key={i}
+            icon={item.icon}
+            title={item.title}
+            description={item.desc}
+          />
 
-            <div className="grid md:grid-cols-3 gap-6 py-3">
-                <div className="text-center">
-                    <div className="border-2 border-button rounded-2xl p-6 shadow">
-                        <FaGlobe className="h-12 w-12 mx-auto mb-4" />
-                        <h3 className="text-xl font-bold mb-2">Desenvolvimento Web</h3>
-                        <p className="text-sm">Aplicações web modernas e responsivas</p>
-                    </div>
-                </div>
-
-                <div className="text-center">
-                    <div className="border-2 border-button rounded-2xl p-6 shadow">
-                        <FaMobileScreen className="h-12 w-12 mx-auto mb-4" />
-                        <h3 className="text-xl font-bold mb-2">Mobile First</h3>
-                        <p className="text-sm">Design responsivo e otimizado para mobile</p>
-                    </div>
-                </div>
-
-                <div className="text-center">
-                    <div className="border-2 border-button rounded-2xl p-6 shadow">
-                        <FaCloud className="h-12 w-12 mx-auto mb-4" />
-                        <h3 className="text-xl font-bold mb-2">Cloud Solutions</h3>
-                        <p className="text-sm">Arquiteturas escaláveis na nuvem</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Skills;
