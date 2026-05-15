@@ -10,29 +10,6 @@
 
 > 👨🏽‍💼 Desenvolvedor Backend com foco em **Java** e **Node.js**, especializado na construção de **APIs RESTful** e microsserviços escaláveis. Experiência em **PostgreSQL/MySQL**, testes automatizados com **JUnit5**, e práticas de qualidade de código. Conhecimento em **Docker** e **AWS** para conteinerização e deploy, além de diferencial em **Frontend** com **React.js (Vite)**.
 
-
-### Contact me
-
-<table>    
-    <tr>    
-        <td>
-            <a href="mailto:dev.everaldomartins@gmail.com" target="_blank">
-                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Gmail.svg" alt="Contato" />
-            </a> 
-        </td>
-        <td>
-            <a href="https://www.linkedin.com/in/everaldomartins" target="_blank">
-                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Linkedin.svg" alt="Linkedin" />
-            </a>
-        </td>
-        <td>
-            <a href="https://www.instagram.com/dev_emartins" target="_blank">
-                <img height=50 src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Instagram.svg" alt="Instagram" />
-            </a>
-        </td>
-    </tr>
-</table>
-
 ### Job Statistics
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dev-emartins&theme=github_dark" width="100%">
 
